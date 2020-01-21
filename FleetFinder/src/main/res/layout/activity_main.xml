@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    
+    <include layout="@layout/device_index" />
+
+    <Button
+        android:id="@+id/btnConnection"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/connection" />
+
+    <Button
+        android:id="@+id/btnSystem"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/system" />
+
+    <Button
+        android:id="@+id/btnPrinter"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/printer" />
+
+    <Button
+        android:id="@+id/btnScanner"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/scanner" />
+
+    <Button
+        android:id="@+id/btnPrinterScenarios"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/printer_scenarios" />
+
+    <Button
+        android:id="@+id/btnResourceManagement"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Resource Management" />
+
+</LinearLayout>

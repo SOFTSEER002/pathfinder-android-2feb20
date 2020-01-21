@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.avery.sampleapp"
+    android:versionCode="1"
+    android:versionName="Development" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <application
+        android:name="com.fox.app.SampleApplication"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.fox.app.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fox.app.printer.scenarios.PrinterScenariosActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.printer.PrinterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.connection.ConnectionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.system.SystemActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.ScannerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.printer.PrinterPropertiesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_printer_properties"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.ScannerPropertiesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_scanner_properties"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.BarcodeSettingsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_barcode_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.CodaBarActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_coda_bar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.Code128Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_code128"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.GS1ext2dActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_gs1ext2d"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.PDF_417Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_pdf_417"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.MaxiCodeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_maxi_code"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.QRCodeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_qrcode"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.DataMatrixActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_data_matrix"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.Gs1Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_gs1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.Code39Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_code39"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.Code93Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_code93"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.D2of5Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_d2of5"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.I2of5Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_i2of5"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.MSIActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_msi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.scanner.barcodesettings.UPCActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_upc"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.ResourcesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_resources"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fox.app.filechooser.FileChooserActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_filechooser"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.fox.app.DeviceService" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	
+	<timestamp key="fileNamePattern" datePattern="yyyyMMdd'T'HHmmss"/>
+	
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+	  	<file>${av.sampleapp.logpath}/ApiLog_${fileNamePattern}.log</file>
+		<encoder>
+			<pattern>%date %level %msg %n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="LOGCAT" class="ch.qos.logback.classic.android.LogcatAppender">
+		<encoder>
+			<pattern>%msg %n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="DEBUG">
+		<appender-ref ref="LOGCAT" />
+		<appender-ref ref="FILE" />
+	</root>
+
+</configuration>

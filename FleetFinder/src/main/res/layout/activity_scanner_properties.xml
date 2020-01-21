@@ -1,0 +1,253 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:id="@+id/tvScanMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/scan_mode"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvLinearSecurityLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvScanMode"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tvScanMode"
+            android:text="@string/linear_security_level"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/rgScanMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvScanMode"
+            android:layout_marginLeft="14dp" >
+
+            <RadioButton
+                android:id="@+id/rbCompatible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/scan_mode_compatible"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/rbContinuous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:text="@string/scan_mode_continuous"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/rbMomentary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:text="@string/scan_mode_momentary"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rgLinearSecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvLinearSecurityLevel"
+            android:layout_alignTop="@+id/rgScanMode"
+            android:layout_marginLeft="70dp" >
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/linear_security_option1"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-15dp"
+                android:text="@string/linear_security_option2"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-15dp"
+                android:text="@string/linear_security_option3"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-15dp"
+                android:text="@string/linear_security_option4"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/rlTimeOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvScanMode"
+            android:layout_below="@+id/rgLinearSecurity"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tvTimeOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/timeout"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvTimeOutValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/tvTimeOut"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <SeekBar
+                android:id="@+id/sbTimeOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvTimeOutValue" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlAimDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rlTimeOut"
+            android:layout_below="@+id/rlTimeOut"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tvAimDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/aim_duration"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvAimDurationValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/tvAimDuration"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <SeekBar
+                android:id="@+id/sbAimDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvAimDurationValue" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlBidir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rlAimDuration"
+            android:layout_below="@+id/rlAimDuration"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tvBidir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/bidir_redundancy"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvBidirValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/tvBidir"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <SeekBar
+                android:id="@+id/sbBidir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvBidirValue" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvSelectiveScanning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvScanMode"
+            android:layout_below="@+id/rlBidir"
+            android:layout_marginTop="25dp"
+            android:text="@string/selective_scanning"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tbSelectiveScanningValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvSelectiveScanning"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/tvSelectiveScanning"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <Button
+            android:id="@+id/btnBarcodeSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvScanMode"
+            android:layout_alignRight="@+id/tvLinearSecurityLevel"
+            android:layout_below="@+id/tvSelectiveScanning"
+            android:layout_marginTop="33dp"
+            android:text="@string/barcode_settings" />
+
+        <Button
+            android:id="@+id/btnResetSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvScanMode"
+            android:layout_alignRight="@+id/tvLinearSecurityLevel"
+            android:layout_below="@+id/btnBarcodeSettings"
+            android:layout_marginTop="18dp"
+            android:text="@string/reset_settings"
+            android:textColor="#FF0000" />
+    </RelativeLayout>
+
+</ScrollView>

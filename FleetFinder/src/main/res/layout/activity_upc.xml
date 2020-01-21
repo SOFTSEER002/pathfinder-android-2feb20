@@ -1,0 +1,487 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/upc_settings_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/enabled"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tbEnabledValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvEnabled"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvUPCEEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvEnabled"
+            android:layout_marginTop="28dp"
+            android:text="@string/upce_enabled"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tbUPCEEnabledValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUPCEEnabled"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvUPCE1Enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvUPCEEnabled"
+            android:layout_marginTop="28dp"
+            android:text="@string/upce1_enabled"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tbUPCE1EnabledValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUPCE1Enabled"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvEAN8Enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvUPCE1Enabled"
+            android:layout_marginTop="28dp"
+            android:text="@string/ean8_enabled"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tbEAN8EnabledValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvEAN8Enabled"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvEAN13Enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvEAN8Enabled"
+            android:layout_marginTop="28dp"
+            android:text="@string/ean13_enabled"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tbEAN13EnabledValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvEAN13Enabled"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvEANBooklandEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvEAN13Enabled"
+            android:layout_marginTop="28dp"
+            android:text="@string/ean_bookland_enabled"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tbEANBooklandEnabledValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvEANBooklandEnabled"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvSupplementalMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEANBooklandEnabled"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="@string/supplemental_mode"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvSupplementalModeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvSupplementalMode"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <SeekBar
+            android:id="@+id/sbSupplementalMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:layout_below="@+id/tvSupplementalMode"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/tvSupplementalModeValue" />
+
+        <TextView
+            android:id="@+id/tvSupplementalRedundancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSupplementalModeValue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/supplemental_redundancy"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvSupplementalRedundancyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvSupplementalRedundancy"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <SeekBar
+            android:id="@+id/sbSupplementalRedundancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:layout_below="@+id/tvSupplementalRedundancy"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/tvSupplementalRedundancyValue" />
+
+        <TextView
+            android:id="@+id/tvUPCACheckDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvSupplementalRedundancyValue"
+            android:layout_marginTop="28dp"
+            android:layout_toLeftOf="@+id/tvUPCACheckDigitsValue"
+            android:text="@string/upca_check_digits_transmission"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tvUPCACheckDigitsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUPCACheckDigits"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvUPCECheckDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvUPCACheckDigits"
+            android:layout_marginTop="28dp"
+            android:layout_toLeftOf="@+id/tvUPCECheckDigitsValue"
+            android:text="@string/upce_check_digits_transmission"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tvUPCECheckDigitsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUPCECheckDigits"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvUPCE1CheckDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvUPCECheckDigits"
+            android:layout_marginTop="28dp"
+            android:layout_toLeftOf="@+id/tvUPCE1CheckDigitsValue"
+            android:text="@string/upce1_check_digits_transmission"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tvUPCE1CheckDigitsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUPCE1CheckDigits"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvUPCAPreambleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUPCE1CheckDigits"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="@string/upca_preamble_mode"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/rgUPCAPreambleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:layout_below="@+id/tvUPCAPreambleMode"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbUPCAPreambleModeNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/preamble_mode_none" />
+
+            <RadioButton
+                android:id="@+id/rbUPCAPreambleModeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preamble_mode_all" />
+
+            <RadioButton
+                android:id="@+id/rbUPCAPreambleModeCountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preamble_mode_country_code" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvUPCEPreambleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgUPCAPreambleMode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="@string/upce_preamble_mode"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/rgUPCEPreambleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:layout_below="@+id/tvUPCEPreambleMode"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbUPCEPreambleModeNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/preamble_mode_none" />
+
+            <RadioButton
+                android:id="@+id/rbUPCEPreambleModeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preamble_mode_all" />
+
+            <RadioButton
+                android:id="@+id/rbUPCEPreambleModeCountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preamble_mode_country_code" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvUPCE1PreambleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgUPCEPreambleMode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="@string/upce1_preamble_mode"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/rgUPCE1PreambleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:layout_below="@+id/tvUPCE1PreambleMode"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbUPCE1PreambleModeNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/preamble_mode_none" />
+
+            <RadioButton
+                android:id="@+id/rbUPCE1PreambleModeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preamble_mode_all" />
+
+            <RadioButton
+                android:id="@+id/rbUPCE1PreambleModeCountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preamble_mode_country_code" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvCouponCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/rgUPCE1PreambleMode"
+            android:layout_marginTop="28dp"
+            android:text="@string/coupon_code"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tvCouponCodeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvCouponCode"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvUPCEtoUPCAConversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvCouponCode"
+            android:layout_marginTop="28dp"
+            android:layout_toLeftOf="@+id/tvUPCEtoUPCAConversionValue"
+            android:text="@string/upce_to_upca_conversion"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tvUPCEtoUPCAConversionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUPCEtoUPCAConversion"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvUPCE1toUPCAConversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvUPCEtoUPCAConversion"
+            android:layout_marginTop="28dp"
+            android:layout_toLeftOf="@+id/tvUPCE1toUPCAConversionValue"
+            android:text="@string/upce1_to_upca_conversion"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tvUPCE1toUPCAConversionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUPCE1toUPCAConversion"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvEAN8ZerosExtention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvUPCE1toUPCAConversion"
+            android:layout_marginTop="28dp"
+            android:layout_toLeftOf="@+id/tvEAN8ZerosExtentionValue"
+            android:text="@string/ean_8_zeros_extention"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tvEAN8ZerosExtentionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvEAN8ZerosExtention"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvEAN8ToEAN13Conversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvEAN8ZerosExtention"
+            android:layout_marginTop="28dp"
+            android:layout_toLeftOf="@+id/tvEAN8ToEAN13ConversionValue"
+            android:text="@string/ean_8_to_ean_13_conversion"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingBottom="20dp" />
+
+        <ToggleButton
+            android:id="@+id/tvEAN8ToEAN13ConversionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvEAN8ToEAN13Conversion"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+    </RelativeLayout>
+
+</ScrollView>

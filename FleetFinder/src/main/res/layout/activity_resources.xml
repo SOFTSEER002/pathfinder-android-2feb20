@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/device_index" />
+
+    <EditText
+        android:id="@+id/etResourcePath"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:imeOptions="actionDone"
+        android:inputType="textUri"
+        android:text="Enter resource path" />
+
+    <Button
+        android:id="@+id/btnAddResource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Add new resource" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rgResourceType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etResourcePath"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/rbResourceTypeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Font" />
+        <RadioButton android:id="@+id/rbResourceTypeGraphic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Graphic" />
+        <RadioButton android:id="@+id/rbResourceTypeLnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LNT" />
+        <RadioButton android:id="@+id/rbResourceTypeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All" />
+    </RadioGroup>
+
+<ListView
+    android:id="@+id/available_resources"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:choiceMode="singleChoice"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/rgResourceType"
+    android:layout_above="@+id/btnAddResource"
+    android:layout_marginBottom="17dp"
+    android:layout_marginTop="17dp"
+    />
+
+</LinearLayout>

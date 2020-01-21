@@ -1,0 +1,235 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/code39_settings_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/enabled"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tbEnabledValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvEnabled"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <RelativeLayout
+            android:id="@+id/rlLength1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvEnabled"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tvLength1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/length_1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvLength1Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvLength1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <SeekBar
+                android:id="@+id/sbLength1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvLength1Value" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLength2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rlLength1"
+            android:layout_below="@+id/rlLength1"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tvLength2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/length_2"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvLength2Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvLength2"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <SeekBar
+                android:id="@+id/sbLength2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvLength2Value" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvPrefixA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/rlLength2"
+            android:layout_marginTop="38dp"
+            android:text="@string/prefix_a_enabled"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tbPrefixAValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvPrefixA"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvFullAscii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvPrefixA"
+            android:layout_marginTop="25dp"
+            android:text="@string/full_ascii_enabled"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tbFullAsciiValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvFullAscii"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvTrioptricEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvFullAscii"
+            android:layout_marginTop="25dp"
+            android:text="@string/trioptric_enabled"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tvTrioptricEnabledValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTrioptricEnabled"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvIntegrityCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvTrioptricEnabled"
+            android:layout_marginTop="25dp"
+            android:text="@string/integrity_check"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tvIntegrityCheckValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvIntegrityCheck"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvConversionToCode32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvIntegrityCheck"
+            android:layout_marginTop="25dp"
+            android:text="@string/conversion_to_code32"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tvConversionToCode32Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvConversionToCode32"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <!-- For some reason relative layout measures incorrect total child size. So we need to add some extra bottom padding (25). -->
+        <TextView
+            android:id="@+id/tvCheckDigitTransmission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEnabled"
+            android:layout_below="@+id/tvConversionToCode32"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="25dp"
+            android:text="@string/check_digits_transmission"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tvCheckDigitTransmissionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvCheckDigitTransmission"
+            android:layout_alignRight="@+id/tbEnabledValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="OFF"
+            android:textOn="ON" />
+    </RelativeLayout>
+
+</ScrollView>

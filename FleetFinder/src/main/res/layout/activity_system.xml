@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:id="@+id/tvDeviceModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/device_model"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvDeviceModelValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvDeviceModel"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tvDeviceModel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvDeviceModelValue"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/tvStatusValue"
+            android:text="@string/status"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvStatusValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvStatus"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvBatteryLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvDeviceModel"
+            android:layout_below="@+id/tvDeviceModel"
+            android:layout_marginTop="20dp"
+            android:text="@string/battery_level"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvBatteryLevelValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvBatteryLevel"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tvBatteryLevel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvBatteryVoltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvBatteryLevelValue"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/tvBatteryVoltageValue"
+            android:text="@string/battery_voltage"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvBatteryVoltageValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvBatteryVoltage"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvFirmwareVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvBatteryLevel"
+            android:layout_below="@+id/tvBatteryLevel"
+            android:layout_marginTop="20dp"
+            android:text="@string/firmware_version"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvFirmwareVersionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvFirmwareVersion"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tvFirmwareVersion"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvSDKVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvBatteryLevel"
+            android:layout_below="@+id/tvFirmwareVersion"
+            android:layout_marginTop="20dp"
+            android:text="@string/sdk__version"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvSDKVersionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvSDKVersion"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tvSDKVersion"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvCdilVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvFirmwareVersion"
+            android:layout_below="@+id/tvSDKVersion"
+            android:layout_marginTop="20dp"
+            android:text="@string/cdil_version"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvCdilVersionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvCdilVersion"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tvCdilVersion"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvDeviceComponents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvDeviceModel"
+            android:layout_below="@+id/tvCdilVersion"
+            android:layout_marginTop="20dp"
+            android:text="@string/device_components"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/tvDeviceComponentsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvDeviceComponents"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tvDeviceComponents"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/tvFeedButtonCallback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvDeviceModel"
+            android:layout_below="@+id/tvDeviceComponents"
+            android:layout_marginTop="25dp"
+            android:text="@string/feed_button_callback"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/tbFeedButtonCallbackValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvFeedButtonCallback"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tvFeedButtonCallback"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tvTriggerModeOfTheDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFeedButtonCallback"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/trigger_mode_of_device"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/rgTriggerMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTriggerModeOfTheDevice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/scan_option" />
+
+            <RadioButton
+                android:id="@+id/rbDrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drop_option" />
+
+            <RadioButton
+                android:id="@+id/rbForward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forward_option" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/rlVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvDeviceModel"
+            android:layout_below="@+id/rgTriggerMode"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tvVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/volume"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvVolumeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/tvVolume"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <SeekBar
+                android:id="@+id/sbVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvVolumeValue"
+                android:max="20" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnPlaySound"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/rlVolume"
+            android:layout_below="@+id/rlVolume"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:text="@string/play_sound" />
+
+        <Button
+            android:id="@+id/btnPlaySoundNumberMinus"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/btnPlaySound"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btnPlaySound" />
+
+        <TextView
+            android:id="@+id/tvPlaySoundNumberValue"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/btnPlaySoundNumberMinus"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/btnPlaySoundNumberMinus"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btnPlaySoundNumberPlus"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/tvPlaySoundNumberValue"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvPlaySoundNumberValue" />
+
+        <Spinner
+            android:id="@+id/spinnerSoundAlias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnPlaySoundNumberPlus"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btnPlaySoundNumberPlus" />
+
+        <Button
+            android:id="@+id/btnResetSettingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnPlaySound"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/reset_parameters" />
+
+    </RelativeLayout>
+
+</ScrollView>

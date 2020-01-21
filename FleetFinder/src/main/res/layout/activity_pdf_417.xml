@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/pdf_417_settings_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvEnabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/enabled"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ToggleButton
+        android:id="@+id/tbEnabledValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvEnabled"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+    <TextView
+        android:id="@+id/tvMicroEnabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvEnabled"
+        android:layout_below="@+id/tvEnabled"
+        android:layout_marginTop="28dp"
+        android:text="@string/micro_enabled"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ToggleButton
+        android:id="@+id/tbMicroEnabledValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvMicroEnabled"
+        android:layout_alignRight="@+id/tbEnabledValue"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+    <TextView
+        android:id="@+id/tvCode128Emulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvEnabled"
+        android:layout_below="@+id/tvMicroEnabled"
+        android:layout_marginTop="28dp"
+        android:text="@string/code_128_emulation"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ToggleButton
+        android:id="@+id/tbCode128EmulationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvCode128Emulation"
+        android:layout_alignRight="@+id/tbEnabledValue"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+</RelativeLayout>

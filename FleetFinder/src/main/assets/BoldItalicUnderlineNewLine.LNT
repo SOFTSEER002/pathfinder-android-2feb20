@@ -1,0 +1,19 @@
+<Job>
+  <Energy>Normal</Energy>
+  <Quantity>1</Quantity>
+  <Command>Print</Command>
+  <LabelSize units="Inches" length="1.6" width="2.0"/>
+  <Image id="Panel1249606" version="0" presentation="0">
+    <ImageSize units="Inches" height="1.6" width="2.0" x="0" y="0" origin="TopLeft"/>
+    <Fields count="1">
+		<TextField id="Text1">
+			<Volatile>0</Volatile>
+			<DrawMode>Transparent</DrawMode>
+			<BoundingBox units="Inches" x="0.0" y="0.0" height="0.55" width="2.000000"/>
+			<Font pointsizeheight="10.000" wordwrap="1">Arial</Font>
+			<HorizontalJustification>Left</HorizontalJustification>
+			<Data min="0">Complex tags test:{x}{b}Bold{/b} {i}Italic{/i} {u}Underline{/u}{x}{i}{b}Bold{/b} Italic{/i}{x}{b}{i}Italic{/i} Bold{/b}{x}{b}Bold {u}Underline{/u}{/b}{x}{u}Underline {b}Bold{/b}{/u}{x}{i}Italic {u}Underline{/u}{/i}{x}{u}Underline {i}Italic{/i}{/u}{x}{b}{i}{u}Bold Italic Underline{/u}{/b}{/i}</Data>
+        </TextField>
+	</Fields>
+  </Image>
+</Job>

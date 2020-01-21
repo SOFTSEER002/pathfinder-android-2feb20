@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include layout="@layout/device_index" />
+
+    <Button
+        android:id="@+id/btnScanPrintTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@layout/device_index"
+        android:layout_marginTop="60dp"
+        android:text="@string/scan_print_test" />
+
+</RelativeLayout>

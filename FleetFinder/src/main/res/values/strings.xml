@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SampleApp</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_connecting">Connecting&#8230;</string>
+    <string name="status_connected">Connected to %1$s</string>
+
+    <string name="action_connect">Connect</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_crlf">CRLF</string>
+    <string name="action_quit">Quit</string>
+
+    <string name="no_bluetooth">Bluetooth is not available on this device.</string>
+    <string name="paired_devices">Choose a paired Bluetooth device</string>
+
+    <string name="command_hint">Enter command here...</string>
+    <string name="terminal_message_template">%1$s > %2$s\n</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">SampleApp</string>
+    <string name="connection">Connection</string>
+    <string name="connecting">Connecting&#8230;</string>
+    <string name="system">System</string>
+    <string name="printer">Printer</string>
+    <string name="scanner">Scanner</string>
+    <string name="printer_scenarios">Printer scenarios</string>
+    <string name="back">Back</string>
+    <string name="wifi">WiFi</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="title_activity_printer_scenarios">Printer Scenarios</string>
+    <string name="scan_print_test">Scan &amp; Print test                        &gt;</string>
+    <string name="title_activity_scanner">ScannerActivity</string>
+    <string name="scan_engine">Scan engine</string>
+    <string name="scanner_settings">Scanner settings</string>
+    <string name="start_scan">Start scan</string>
+    <string name="stop_scan">Stop scan</string>
+    <string name="resync_printer">Resynchronize printer</string>
+    <string name="go_to_black_mark">Go to black mark</string>
+    <string name="calibrate_black_mark">Calibrate black mark</string>
+    <string name="feed_one_label">Feed one label</string>
+    <string name="clear_error">Clear error</string>
+    <string name="abort_error">Abort error</string>
+    <string name="abort_all_jobs">Abort all jobs</string>
+    <string name="print_sample">Print Sample</string>
+    <string name="properties">Properties</string>
+    <string name="scan_for_devices">Scan for devices</string>
+    <string name="bluetooth_is_not_available">"Bluetooth is not available"</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled.</string>
+    <string name="play_sound">Play Sound</string>
+    <string name="no_devices">No Devices</string>
+    <string name="any_device">Any Device</string>
+    <string name="all_devices">All Devices</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="left_arrow">&lt;</string>
+    <string name="right_arrow">&gt;</string>
+    <string name="title_activity_resources">Resources</string>
+
+    <!-- File Chooser Activity -->
+    <string name="title_activity_filechooser">File Chooser</string>
+    <string name="fileSize">File Size</string>
+    <string name="currentDir">Current Dir</string>
+
+    <!-- DeviceListActivity -->
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="scanning">scanning for devices&#8230;</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_found">No devices found</string>
+
+    <!-- System screen -->
+    <string name="device_model">Device model:</string>
+    <string name="battery_level">Battery level:</string>
+    <string name="status">Status:</string>
+    <string name="battery_voltage">Battery voltage:</string>
+    <string name="firmware_version">Firmware version:</string>
+    <string name="cdil_version">CDIL version:</string>
+    <string name="sdk__version">SDK version:</string>
+    <string name="device_components">Device components are:</string>
+    <string name="feed_button_callback">Feed button callback</string>
+    <string name="trigger_mode_of_device">Trigger mode of the device</string>
+    <string name="scan_option">Scan</string>
+    <string name="drop_option">Drop</string>
+    <string name="forward_option">Forward</string>
+    <string name="volume">Volume</string>
+    <string name="reset_parameters">Reset all parameters to default</string>
+    <string name="title_activity_scanner_properties">ScannerProperties</string>
+
+    <!-- Printer Properties screen -->
+    <string name="title_activity_printer_properties">Printer Properties</string>
+    <string name="version">Version:</string>
+    <string name="supply_type">Supply type</string>
+    <string name="supply_type_black_mark">BlackMark</string>
+    <string name="supply_type_none">None</string>
+    <string name="supply_type_line_mode">LineMode</string>
+    <string name="contrast">Contrast</string>
+    <string name="supply_position">Supply position</string>
+    <string name="max_length">Max length</string>
+    <string name="vertical_adjust">Vertical adjust</string>
+    <string name="horizontal_adjust">Horizontal adjust</string>
+    <string name="back_distance">Back distance</string>
+    <string name="over_feed_distance">Overfeed distance</string>
+    <string name="speed">Speed</string>
+    <string name="energy">Energy</string>
+    <string name="energy_standard">Standard</string>
+    <string name="energy_high">High</string>
+    <string name="back_feed">Back feed</string>
+    <string name="over_feed">Over feed</string>
+    <string name="line_mode">Line mode</string>
+    <string name="on_black_mark">On black mark</string>
+
+    <!-- Scanner Properties screen -->
+    <string name="scan_mode">Scan mode</string>
+    <string name="scan_mode_compatible">Compatible</string>
+    <string name="scan_mode_continuous">Continuous</string>
+    <string name="scan_mode_momentary">Momentary</string>
+    <string name="timeout">Timeout</string>
+    <string name="aim_duration">Aim duration</string>
+    <string name="linear_security_level">Linear security level</string>
+    <string name="bidir_redundancy">BiDir redundancy</string>
+    <string name="selective_scanning">Selective scanning</string>
+    <string name="barcode_settings">Barcode settings</string>
+    <string name="reset_settings">Reset settings</string>
+    <string name="linear_security_option1">1</string>
+    <string name="linear_security_option2">2</string>
+    <string name="linear_security_option3">3</string>
+    <string name="linear_security_option4">4</string>
+
+    <!-- Barcode settings screen -->
+    <string name="title_activity_barcode_settings">Barcode Settings</string>
+    <string name="codabar">Codabar</string>
+    <string name="gs1">GS1</string>
+    <string name="code_128">Code 128</string>
+    <string name="code_39">Code 39</string>
+    <string name="i_2_of_5">I 2 of 5</string>
+    <string name="datamatrix">DataMatrix</string>
+    <string name="code_93">Code 93</string>
+    <string name="gs1_2d_ext">GS1 2D ext.</string>
+    <string name="msi">MSI</string>
+    <string name="maxicode">MaxiCode</string>
+    <string name="d_2_of_5">D 2 of 5</string>
+    <string name="pdf_417">PDF-417</string>
+    <string name="upc">UPC</string>
+    <string name="qr_code">QR Code</string>
+    <string name="disable_all_barcodes">Disable all barcodes</string>
+
+    <!-- Codabar Settings -->
+    <string name="title_activity_coda_bar">CodaBar</string>
+    <string name="codabar_settings">Codabar settings</string>
+    <string name="enabled">Enabled</string>
+    <string name="length_1">Length 1</string>
+    <string name="length_2">Length 2</string>
+    <string name="clsi_enabled">CLSI Enabled</string>
+    <string name="notis_enabled">Notis Enabled</string>
+
+    <!-- Code 128 Settings -->
+    <string name="title_activity_code128">Code128</string>
+    <string name="code128_settings">Code 128 settings</string>
+    <string name="isbt_enabled">ISBT Enabled</string>
+    <string name="ucc_ean_enabled">UCC/EAN Enabled</string>
+
+    <!-- GS1 ext 2D Settings -->
+    <string name="title_activity_gs1ext2d">GS1ext2d</string>
+    <string name="gs1_ext_2d_settings_title">GS1 Ext. 2D settings</string>
+    <string name="composite_ccab">Composite CcAb</string>
+    <string name="composite_ccc">Composite CCC</string>
+    <string name="expanded">Expanded</string>
+    <string name="limited">Limited</string>
+
+    <!-- PDF 417 Settings -->
+    <string name="title_activity_pdf_417">PDF_417</string>
+    <string name="pdf_417_settings_title">PDF_417 settings</string>
+    <string name="micro_enabled">Micro Enabled</string>
+    <string name="code_128_emulation">Code128 Emulation</string>
+
+    <!-- Maxi Code Settings -->
+    <string name="title_activity_maxi_code">MaxiCode</string>
+    <string name="maxi_code_settings_title">MaxiCode settings</string>
+
+    <!-- QR Code Settings -->
+    <string name="title_activity_qrcode">QRCode</string>
+    <string name="qr_code_settings_title">QR Code settings</string>
+    <string name="inverse_mode">Inverse Mode</string>
+    <string name="inverse_mode_regular">Regular</string>
+    <string name="inverse_mode_inverse">Inverse</string>
+    <string name="inverse_mode_both">Both</string>
+    <string name="title_activity_abc">Abc</string>
+
+    <!-- Data Matrix Settings -->
+    <string name="title_activity_data_matrix">DataMatrix</string>
+    <string name="data_matrix_settings_title">DataMatrix settings</string>
+    <string name="inverse_scanning">Inverse Scanning</string>
+    <string name="inverse_scanning_mode_regular">Regular</string>
+    <string name="inverse_scanning_mode_inverse">Inverse</string>
+    <string name="inverse_scanning_mode_both">Both</string>
+    <string name="mirror_decoding">Mirror Decoding</string>
+    <string name="mirror_decoding_never">Never</string>
+    <string name="mirror_decoding_always">Always</string>
+    <string name="mirror_decoding_autodetect">Autodetect</string>
+
+    <!-- Gs1 Settings -->
+    <string name="title_activity_gs1">GS1</string>
+    <string name="gs1_settings_title">GS1 settings</string>
+    <string name="upc_ean_conversion">Upc Ean Conversion</string>
+
+    <!-- Code 39 Settings -->
+    <string name="title_activity_code39">Code39</string>
+    <string name="code39_settings_title">Code 39 settings</string>
+    <string name="prefix_a_enabled">PrefixA Enabled</string>
+    <string name="full_ascii_enabled">FullAscii Enabled</string>
+    <string name="trioptric_enabled">Trioptric Enabled</string>
+    <string name="integrity_check">Integrity Check</string>
+    <string name="conversion_to_code32">Conversion To Code32</string>
+    <string name="check_digits_transmission">Check Digits Transmission</string>
+
+    <!-- Code 39 Settings -->
+    <string name="title_activity_code93">Code93</string>
+    <string name="code93_settings_title">Code 93 settings</string>
+
+    <!-- D 2 of 5 Settings -->
+    <string name="title_activity_d2of5">D2of5</string>
+    <string name="d2of5_settings_title">D 2 of 5 settings</string>
+
+    <!-- I 2 of 5 Settings -->
+    <string name="title_activity_i2of5">I2of5</string>
+    <string name="i2of5_settings_title">I 2 of 5 settings</string>
+    <string name="conversion_to_ean_13">Conversion To Ean13</string>
+
+    <!-- MSI Settings -->
+    <string name="title_activity_msi">MSI</string>
+    <string name="msi_settings_title">MSI settings</string>
+    <string name="two_checksums">Two Checksums</string>
+    <string name="mod10_mod11">Mod10/Mod11</string>
+
+    <!-- UPC Settings -->
+    <string name="title_activity_upc">UPC</string>
+    <string name="upc_settings_title">UPC settings</string>
+    <string name="upce_enabled">UPCE Enabled</string>
+    <string name="upce1_enabled">UPCE1 Enabled</string>
+    <string name="ean8_enabled">EAN 8 Enabled</string>
+    <string name="ean13_enabled">EAN 13 Enabled</string>
+    <string name="ean_bookland_enabled">EAN Bookland Enabled</string>
+    <string name="supplemental_mode">Supplemental Mode</string>
+    <string name="supplemental_redundancy">Supplemental Redundancy</string>
+    <string name="upca_check_digits_transmission">UPCA Check Digits Transmission</string>
+    <string name="upce_check_digits_transmission">UPCE Check Digits Transmission</string>
+    <string name="upce1_check_digits_transmission">UPCE1 Check Digits Transmission</string>
+    <string name="upca_preamble_mode">UPCA Preamble Mode</string>
+    <string name="upce_preamble_mode">UPCE Preamble Mode</string>
+    <string name="upce1_preamble_mode">UPCE1 Preamble Mode</string>
+    <string name="preamble_mode_none">None</string>
+    <string name="preamble_mode_all">All</string>
+    <string name="preamble_mode_country_code">Country Code</string>
+    <string name="coupon_code">Coupon Code</string>
+    <string name="upce_to_upca_conversion">UPCE To UPCA Conversion</string>
+    <string name="upce1_to_upca_conversion">UPCE1 To UPCA Conversion</string>
+    <string name="ean_8_zeros_extention">EAN 8 Zeros Extentions</string>
+    <string name="ean_8_to_ean_13_conversion">EAN 8 To EAN 13 Conversion</string>
+</resources>

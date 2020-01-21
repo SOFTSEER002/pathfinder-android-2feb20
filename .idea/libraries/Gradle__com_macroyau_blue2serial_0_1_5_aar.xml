@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.macroyau:blue2serial:0.1.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-blue2serial-0.1.5.aar/2f6a4f4ecd7cc58d3643f4a1a3a951c8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-blue2serial-0.1.5.aar/2f6a4f4ecd7cc58d3643f4a1a3a951c8/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.macroyau/blue2serial/0.1.5/61a711f93655809d529d3b661a323242a6088e0b/blue2serial-0.1.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.macroyau/blue2serial/0.1.5/eb81f51235f660bfdcbf9c7aee11abbb221597ff/blue2serial-0.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/qr_code_settings_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvEnabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/enabled"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ToggleButton
+        android:id="@+id/tbEnabledValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvEnabled"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+    <TextView
+        android:id="@+id/tvInverseMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEnabled"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="@string/inverse_mode"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/rgInverseMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvEnabled"
+        android:layout_alignRight="@+id/tbEnabledValue"
+        android:layout_below="@+id/tvInverseMode"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbInverseMode_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/inverse_mode_regular" />
+
+        <RadioButton
+            android:id="@+id/rbInverseMode_Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inverse_mode_inverse" />
+
+        <RadioButton
+            android:id="@+id/rbInverseMode_Both"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inverse_mode_both" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvMicroEnabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvEnabled"
+        android:layout_below="@+id/rgInverseMode"
+        android:layout_marginTop="28dp"
+        android:text="@string/micro_enabled"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ToggleButton
+        android:id="@+id/tvMicroEnabledValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvMicroEnabled"
+        android:layout_alignRight="@+id/tbEnabledValue"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+</RelativeLayout>

@@ -1,0 +1,337 @@
+<?xml version="1.0" ?>
+<Job>
+    <Energy>Normal</Energy>
+    <Quantity>1</Quantity>
+    <LabelSize units="Inches" length="1.50" width="1.90" />
+    <Command>Print</Command>
+    <Image id="Barcode scenarios" version="2.1">
+        <ImageSize units="Inches" x="0.05" y="0.00" height="1.50" width="1.87" origin="BottomLeft" />
+        <Presentation>0</Presentation>
+        <Fields count="36">
+            <BarcodeField id="upca">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>upca</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+
+            <BarcodeField id="upca+2">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>upca+2</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="upca+5">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>upca+5</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="upce">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>upce</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="upce1">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>upce1</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="upce+2">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>upce+2</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="upce+5">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>upce+5</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="ean8">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>ean8</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="ean8+2">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>ean8+2</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="ean8+5">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>ean8+5</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="ean13">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y="0.05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>ean13</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="ean13+2">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y="0.05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>ean13+2</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="ean13+5">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y="0.05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>ean13+5</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="i2of5">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y="0.05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>i2of5</Type>
+                <Options density="13" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="itf">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y="0.05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>itf</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="code39">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".0" y="0.13" justification="Center" />
+                <BarHeight units="Inches">0.27</BarHeight>
+                <Type>code39</Type>
+                <Options density="20" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="code93">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".0" y="0.13" justification="Center" />
+                <BarHeight units="Inches">0.27</BarHeight>
+                <Type>code93</Type>
+                <Options density="10" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="code2of5">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".0" y="0.13" justification="Center" />
+                <BarHeight units="Inches">0.27</BarHeight>
+                <Type>code2of5</Type>
+                <Options density="12" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="codabar">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>codabar</Type>
+                <Options density="9" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="nw7">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>nw7</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="msi">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>msi</Type>
+                <Options density="7" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="code128">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>code128</Type>
+                <Options density="20" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="code128a">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>code128a</Type>
+                <Options density="20" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="code128b">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>code128b</Type>
+                <Options density="20" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="code128c">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>code128c</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="pdf417">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>pdf417</Type>
+                <Options density="9" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="micropdf417">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>micropdf417</Type>
+                <Options density="9" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="maxicode">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>maxicode</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="code16">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>code16</Type>
+                <Options density="20" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="data matrix">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>data matrix</Type>
+                <Options density="30" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="quick response">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>quick response</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="qr">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>qr</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="postnet">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>postnet</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="gs1databar">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>gs1databar</Type>
+                <Options density="8" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="gs1">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>gs1</Type>
+                <Options density="8" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+            <BarcodeField id="rss">
+                <Volatile>1</Volatile>
+                <Origin units="Inches" x=".9" y=".05" justification="Center" />
+                <BarHeight units="Inches">0.35</BarHeight>
+                <Type>rss</Type>
+                <Options density="4" humanreadable="1"/>
+                <Data />
+            </BarcodeField>
+            
+        </Fields>
+    </Image>
+</Job>
