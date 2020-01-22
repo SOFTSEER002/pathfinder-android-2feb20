@@ -12,12 +12,15 @@ import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.text.Layout;
 import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.avery.sampleapp.R;
+import com.fox.app.ApiService.ApiService;
+import com.fox.app.ApiService.ApiUtils;
+import com.fox.app.ApiService.ResponseModel;
 import com.fox.app.printer.scenarios.PrinterScenariosActivity;
 import com.fox.app.scanner.ScannerActivity;
 import com.fox.app.system.SystemActivity;
@@ -59,6 +62,9 @@ import avd.sdk.CompanionAPIErrors;
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.core.joran.spi.JoranException;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class SampleApplication extends Application {
     private static final String LOG_FOLDER_ENV_VARIABLE = "av.sampleapp.logpath";
@@ -108,8 +114,8 @@ public class SampleApplication extends Application {
     public static String NO_DEVICES;
 
     public String resourcePath = null;
-
     private int counter = 0;
+    ApiService apiService;
 
     // We have to pass data into the listener that would attempt reconnection, so we implement it as a custom class that
     // contains the data that we need to pass.
@@ -197,6 +203,7 @@ public class SampleApplication extends Application {
         NO_DEVICES = getResources().getText(R.string.no_devices).toString();
         currentDeviceName = NO_DEVICES;
         dbHelper = new DBHelper(this);
+        apiService = ApiUtils.getAPIService();
         abortPrinterError = new OnClickListener() {
 
             @Override
@@ -341,16 +348,17 @@ public class SampleApplication extends Application {
 
                 String deviceName = device.getSerial();
                 if (allDevicesSelected() || currentDeviceName.equals(deviceName)) {
-                    if (dbHelper.columnExists(scanData) != null) {
-                        Log.e("BARCODE SCANNED", "onScanReceived: already there !");
-                        printSample(dbHelper.columnExists(scanData));
-                    } else {
-                        Log.e("BARCODE SCANNED", "new");
-
-                    }
+//                    if (dbHelper.columnExists(scanData) != null) {
+//                        Log.e("BARCODE SCANNED", "onScanReceived: already there !");
+////                        printSample(dbHelper.columnExists(scanData));
+//                    } else {
+//                        Log.e("BARCODE SCANNED", "new");
+//
+//                    }
                     ;
                     scannerActivityText = scannerActivityText + "Scanned: " + scanData + ". Barcode type: " + barcodeType + ". Device: " + deviceName + "\n";
-
+//                   get Data from server
+                    getBarcodeResponse(scanData);
                     currentActivity.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -425,6 +433,22 @@ public class SampleApplication extends Application {
         };
         IntentFilter filter = new IntentFilter(SampleApplication.INTENT_ACTION_UPDATE_DEVICE_SELECTION);
         registerReceiver(mDeviceSelectedReceiver, filter);
+    }
+
+    void getBarcodeResponse(String barcode) {
+        apiService.getBarcodeResult("foxuser01", "foxuser01", barcode).enqueue(new Callback<ResponseModel>() {
+            @Override
+            public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
+                if (response.code() == 200) {
+                    printSample(response.body().getBarcode(), response.body().getBatchId(), response.body().getBatchDate(), response.body().getLabelSequence(), response.body().getScanTime(), response.body().getBarcode());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseModel> call, Throwable t) {
+                Toast.makeText(currentActivity, ""+t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public IDevice createDevice(DeviceConnectionInfo deviceConnectionInfo) throws ApiDeviceManagerException, ApiScannerException, ApiPrinterException, ApiDeviceException, ApiCommunicationException {
@@ -510,16 +534,16 @@ public class SampleApplication extends Application {
         currentDeviceName = NO_DEVICES;
     }
 
-    private void printSample(String s) {
+    private void printSample(String barcode, String batchId, String batchDate, String labelSequence, String scanTime, String barcodeID) {
 
-        String text = "Product Name :- BLCK\n\tprice 5$";
-        byte[][] stringText = {s.getBytes()};
+
+        byte[][] stringText = {batchId.getBytes(), batchDate.getBytes(), labelSequence.getBytes(), scanTime.getBytes(), barcode.getBytes(), barcodeID.getBytes()};
         if (this.allDevicesSelected()) {
             for (DeviceData deviceData : this.connectedDevicesData.values()) {
                 IDevice device = deviceData.device;
                 IPrinter printer = device.getPrinter();
                 try {
-                    printer.print("Data Print", 1, stringText);
+                    printer.print("Label Shipment LNT", 1, stringText);
                 } catch (ApiPrinterException e) {
                     e.printStackTrace();
                 }
@@ -528,7 +552,7 @@ public class SampleApplication extends Application {
             IDevice device = this.getDevice();
             IPrinter printer = device.getPrinter();
             try {
-                printer.print("Barcode Text Print LNT", 1, stringText);
+                printer.print("Label Shipment LNT", 1, stringText);
             } catch (ApiPrinterException e) {
                 e.printStackTrace();
             }

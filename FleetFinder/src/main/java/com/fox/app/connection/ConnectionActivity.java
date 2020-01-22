@@ -21,9 +21,10 @@ import android.widget.CheckedTextView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.avery.sampleapp.R;
 import com.fox.app.SampleAppActivity;
 import com.fox.app.SampleApplication;
-import com.avery.sampleapp.R;
+import com.fox.app.scanner.ScannerActivity;
 
 import java.util.Set;
 
@@ -246,7 +247,10 @@ public class ConnectionActivity extends SampleAppActivity {
                 application.createDevice(new DeviceConnectionInfo(deviceSerial, deviceAddress, ConnectionType.Bluetooth));
                 application.currentDeviceName = deviceSerial;
                 result = CT_SUCCESS;
-                showMessageBox("Device Connected", "Device " + deviceSerial + " has been successfully connected.", "Ok", null, null, null, null);
+//                showMessageBox("Device Connected", "Device " + deviceSerial + " has been successfully connected.", "Ok", null, null, null, null);
+//                Toast.makeText(ConnectionActivity.this, "Device Connected " + deviceSerial, Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ConnectionActivity.this, ScannerActivity.class));
+
             } catch (ApiDeviceManagerException e) {
                 showErrorMessageBox("Device manager error", e, "Ok", null, null, null, null);
             } catch (ApiDeviceException e) {
@@ -288,5 +292,14 @@ public class ConnectionActivity extends SampleAppActivity {
             sendBroadcast(new Intent(SampleApplication.INTENT_ACTION_UPDATE_SCREEN_CONTROLS));
         }
     }
+
+    @Override
+    protected void onPause() {
+        progressDialog.dismiss();
+
+        super.onPause();
+
+    }
+
 
 }

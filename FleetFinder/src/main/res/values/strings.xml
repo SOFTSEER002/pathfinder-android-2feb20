@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SampleApp</string>
+    <string name="app_name">FOX App</string>
     <string name="status_disconnected">Disconnected</string>
     <string name="status_connecting">Connecting&#8230;</string>
     <string name="status_connected">Connected to %1$s</string>
@@ -18,7 +18,7 @@
     <string name="terminal_message_template">%1$s > %2$s\n</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">SampleApp</string>
+    <string name="title_activity_main">Fox App</string>
     <string name="connection">Connection</string>
     <string name="connecting">Connecting&#8230;</string>
     <string name="system">System</string>

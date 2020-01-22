@@ -111,9 +111,9 @@ public class MainActivity extends SampleAppActivity {
 			}
 		});
 		
-//        dbHelper.insertProductData("Product 1","5435168163", "5$");
-//        dbHelper.insertProductData("Product 2","123456789", "15$");
-//        dbHelper.insertProductData("Product 3","876867573", "25$");
+        dbHelper.insertProductData("Product 1","5435168163", "5$");
+        dbHelper.insertProductData("Product 2","123456789", "15$");
+        dbHelper.insertProductData("Product 3","876867573", "25$");
 
         btnSystem = (Button) findViewById(R.id.btnSystem);
         btnSystem.setOnClickListener(new View.OnClickListener() {
@@ -217,7 +217,12 @@ public class MainActivity extends SampleAppActivity {
 			listOfResources = ResourceManager.getResourceList(ResourceMediaType.Lnt);
 			if (!Arrays.asList(listOfResources).contains("Sample Print LNT"))
 				application.registerResource(ResourceMediaType.Lnt, "Sample Print LNT", "SamplePrint.LNT");
-
+			if (!Arrays.asList(listOfResources).contains("Print LNT"))
+				application.registerResource(ResourceMediaType.Lnt, "Print LNT", "Print.LNT");
+			if (!Arrays.asList(listOfResources).contains("Label Shipment LNT"))
+				application.registerResource(ResourceMediaType.Lnt, "Label Shipment LNT", "LabelShipment.lnt");
+			if (!Arrays.asList(listOfResources).contains("Sample Label LNT"))
+				application.registerResource(ResourceMediaType.Lnt, "Sample Label LNT", "SampleLabel.LNT");
 			if (!Arrays.asList(listOfResources).contains("Quantity Test LNT"))
 				application.registerResource(ResourceMediaType.Lnt, "Quantity Test LNT", "QuantityTest.LNT");
 

@@ -33,6 +33,7 @@ public class ScannerActivity extends SampleAppActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.setContentView(R.layout.activity_scanner);
+		getActionBar().setTitle("Scan");
 	}
 	
 	@Override

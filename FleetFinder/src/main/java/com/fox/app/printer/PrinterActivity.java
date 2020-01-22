@@ -141,8 +141,14 @@ public class PrinterActivity extends SampleAppActivity {
 
 	private void printSample() {
 		printSampleIndex++;
-			String text= "Product Name :- BLCK\n\tprice 5$";
-		byte[][] stringText = {text.getBytes(),text.getBytes(),text.getBytes()};
+
+			String barcode= "203540749";
+			String batchId= "FOX17337";
+			String batchDate= "2020-01-21";
+			String labelSequence= "1 of 100";
+			String scanTime= "2020/01/21 16:04:52";
+			String barcodeID= "203540749";
+		byte[][] stringText = {batchId.getBytes(),batchDate.getBytes(),labelSequence.getBytes(),scanTime.getBytes(),barcode.getBytes(),barcodeID.getBytes()};
 		if (application.allDevicesSelected())
 		{
 			for (DeviceData deviceData : application.connectedDevicesData.values())
@@ -161,7 +167,7 @@ public class PrinterActivity extends SampleAppActivity {
 			IDevice device = application.getDevice();
 			IPrinter printer = device.getPrinter();
 			try {
-				printer.print("Sample Print LNT", 1, stringText);
+				printer.print("Label Shipment LNT", 1, stringText);
 			} catch (ApiPrinterException e) {
 				showStandardErrorMessageBox("Sample print failed", e, device);
 			}
