@@ -9,18 +9,28 @@ import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.Looper;
 import android.text.Layout;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.avery.sampleapp.R;
+import com.fox.app.Activities.MainActivity;
+import com.fox.app.Activities.SampleAppActivity;
 import com.fox.app.ApiService.ApiService;
 import com.fox.app.ApiService.ApiUtils;
 import com.fox.app.ApiService.ResponseModel;
+import com.fox.app.Utils.DBHelper;
+import com.fox.app.Utils.DeviceService;
+import com.fox.app.Utils.SharedPreferenceMethod;
 import com.fox.app.printer.scenarios.PrinterScenariosActivity;
 import com.fox.app.scanner.ScannerActivity;
 import com.fox.app.system.SystemActivity;
@@ -76,6 +86,14 @@ public class SampleApplication extends Application {
     private IListenerError systemErrorCallback;
 
     private TextView tvScannerActivityText = null;
+    TextView tvbarcodeTxt = null;
+    TextView tvbatchIdTxt = null;
+    TextView tvbatchDateTxt = null;
+    TextView tvlabelSequenceTxt = null;
+    TextView tvScanDateTxt = null;
+    Handler handler = new Handler(Looper.getMainLooper());
+    Runnable runnable;
+    boolean isRunning = false;
     private IListenerScan scannerActivityCallback = null;
     private String scannerActivityText = "";
 
@@ -112,10 +130,12 @@ public class SampleApplication extends Application {
     public static String ANY_DEVICE;
     public static String ALL_DEVICES;
     public static String NO_DEVICES;
+    ConnectivityManager cnnxManager;
 
     public String resourcePath = null;
     private int counter = 0;
     ApiService apiService;
+    private SharedPreferenceMethod sharedPreferenceMethod;
 
     // We have to pass data into the listener that would attempt reconnection, so we implement it as a custom class that
     // contains the data that we need to pass.
@@ -191,7 +211,7 @@ public class SampleApplication extends Application {
     public void onCreate() {
         super.onCreate();
         configureLogging();
-
+        sharedPreferenceMethod = new SharedPreferenceMethod(this);
         try {
             SDK_VERSION = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
         } catch (PackageManager.NameNotFoundException e) {
@@ -222,6 +242,10 @@ public class SampleApplication extends Application {
 
         };
 
+
+        cnnxManager = (ConnectivityManager)
+                getSystemService(Context.CONNECTIVITY_SERVICE);
+
         clearPrinterError = new OnClickListener() {
 
             @Override
@@ -247,13 +271,12 @@ public class SampleApplication extends Application {
                 IDevice device = currentActivity.findDeviceAssociatedWithAlert(arg0);
                 if (device == null)
                     return;
-
                 try {
                     device.getPrinter().abortError();
                     device.getPrinter().resync();
                 } catch (ApiPrinterException e) {
+                    e.printStackTrace();
                 }
-
                 currentActivity.dismissAllAlertsForDevice(device, false); // All error messages pertaining to this device are irrelevant now.
             }
         };
@@ -348,17 +371,29 @@ public class SampleApplication extends Application {
 
                 String deviceName = device.getSerial();
                 if (allDevicesSelected() || currentDeviceName.equals(deviceName)) {
-//                    if (dbHelper.columnExists(scanData) != null) {
-//                        Log.e("BARCODE SCANNED", "onScanReceived: already there !");
-////                        printSample(dbHelper.columnExists(scanData));
-//                    } else {
-//                        Log.e("BARCODE SCANNED", "new");
-//
-//                    }
-                    ;
+
                     scannerActivityText = scannerActivityText + "Scanned: " + scanData + ". Barcode type: " + barcodeType + ". Device: " + deviceName + "\n";
-//                   get Data from server
-                    getBarcodeResponse(scanData);
+
+                    NetworkInfo ni = cnnxManager.getActiveNetworkInfo();
+                    if (ni == null || !ni.isAvailable() || !ni.isConnected()) {
+//                        Toast.makeText(SampleApplication.this, "No Internet Connection!", Toast.LENGTH_SHORT).show();
+                        try {
+                            device.playSound("LookFail",1);
+                        } catch (ApiDeviceException e) {
+                            e.printStackTrace();
+                        }
+                    }else{
+                        //                   get Data from server
+                        getBarcodeResponse(scanData);
+                    }
+
+                    if (isRunning) {
+                        Log.e("Callback", "onResponse: callback removed");
+                    } else {
+                        handler.postDelayed(runnable, 5000);
+                        Log.e("Callback", "onResponse: callback started");
+                    }
+
                     currentActivity.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -429,24 +464,52 @@ public class SampleApplication extends Application {
             @Override
             public void onReceive(Context context, Intent intent) {
                 updateDeviceIndexPresentation();
+
             }
         };
         IntentFilter filter = new IntentFilter(SampleApplication.INTENT_ACTION_UPDATE_DEVICE_SELECTION);
         registerReceiver(mDeviceSelectedReceiver, filter);
+
+
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                tvbarcodeTxt.setText("-");
+                tvbatchIdTxt.setText("-");
+                tvbatchDateTxt.setText("-");
+                tvlabelSequenceTxt.setText("-");
+                tvScanDateTxt.setText("-");
+                isRunning = true;
+
+            }
+        };
+
     }
 
-    void getBarcodeResponse(String barcode) {
+    void getBarcodeResponse(final String barcode) {
         apiService.getBarcodeResult("foxuser01", "foxuser01", barcode).enqueue(new Callback<ResponseModel>() {
             @Override
             public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
+
                 if (response.code() == 200) {
                     printSample(response.body().getBarcode(), response.body().getBatchId(), response.body().getBatchDate(), response.body().getLabelSequence(), response.body().getScanTime(), response.body().getBarcode());
+                    tvbarcodeTxt.setText(response.body().getBarcode());
+                    tvbatchIdTxt.setText(response.body().getBatchId());
+                    tvbatchDateTxt.setText(response.body().getBatchDate());
+                    tvlabelSequenceTxt.setText(response.body().getLabelSequence());
+                    tvScanDateTxt.setText(response.body().getScanTime());
+                    if (isRunning) {
+                        handler.removeCallbacks(runnable);
+                        handler.postDelayed(runnable, 5000);
+                    } else {
+                        isRunning = false;
+                    }
                 }
             }
 
             @Override
             public void onFailure(Call<ResponseModel> call, Throwable t) {
-                Toast.makeText(currentActivity, ""+t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(currentActivity, "" + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -599,7 +662,9 @@ public class SampleApplication extends Application {
 
         if (connectedDevicesData.isEmpty())  // Stop service that displays 6140 icon whenever at least one device is connected.
             stopService(new Intent(this, DeviceService.class));
-
+        if (sharedPreferenceMethod != null) {
+            sharedPreferenceMethod.saveDeviceName("");
+        }
         // If there are no more connected devices, set "No devices" as current selected device.
         // If only one device is connected, choose it as currently selected device.
         // If several devices are connected, there was a device selected (not "All Devices" option was selected),
@@ -668,6 +733,7 @@ public class SampleApplication extends Application {
         });
 
         updateDeviceIndexPresentation();
+
     }
 
     private void updateDeviceIndexPresentation() {
@@ -686,8 +752,13 @@ public class SampleApplication extends Application {
                 btnDeviceRight.setVisibility(View.VISIBLE);
             }
         }
+        if (currentDeviceName.equals("No Devices")) {
+            tvDeviceName.setText("Device is not Connected");
+            sharedPreferenceMethod.saveDeviceName("");
+        } else {
+            tvDeviceName.setText("Connected to " + currentDeviceName);
 
-        tvDeviceName.setText(currentDeviceName);
+        }
     }
 
     public IDevice getDevice() {
@@ -717,6 +788,7 @@ public class SampleApplication extends Application {
             return;
 
         try {
+
             deviceData.device.getScanner().enableScan(newIsScannerEnabled);
             deviceData.isScannerEnabled = newIsScannerEnabled;
         } catch (ApiScannerException e) {
@@ -749,6 +821,11 @@ public class SampleApplication extends Application {
 
     public void addScannerActivity() throws ApiScannerException {
         tvScannerActivityText = (TextView) currentActivity.findViewById(R.id.tvMain);
+        tvbarcodeTxt = (TextView) currentActivity.findViewById(R.id.barcodeTxt);
+        tvbatchIdTxt = (TextView) currentActivity.findViewById(R.id.batchIdTxt);
+        tvbatchDateTxt = (TextView) currentActivity.findViewById(R.id.batchDateTxt);
+        tvlabelSequenceTxt = (TextView) currentActivity.findViewById(R.id.labelSequenceTxt);
+        tvScanDateTxt = (TextView) currentActivity.findViewById(R.id.scannedDateTxt);
 
         tvScannerActivityText.setText(scannerActivityText);
         tvScannerActivityText.setMovementMethod(new ScrollingMovementMethod());

@@ -1,6 +1,6 @@
 package com.fox.app.scanner.barcodesettings;
 
-import com.fox.app.PropertiesSettingActivity;
+import com.fox.app.Activities.PropertiesSettingActivity;
 
 public abstract class BarcodePropertiesSettingActivity extends PropertiesSettingActivity {
 

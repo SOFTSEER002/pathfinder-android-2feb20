@@ -1,40 +1,230 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
-	<include layout="@layout/device_index" />
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:id="@+id/toolbar"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:src="@drawable/sample_app_active"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan     "
+            android:layout_marginLeft="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#fff"/>
+        <ImageView
+            android:id="@+id/connectionBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_bluetooth"
+            />
+        <ImageView
+            android:id="@+id/printerbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_print_"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <include
+        android:id="@+id/device"
+        layout="@layout/device_index"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
 
     <TextView
         android:id="@+id/tvScanEngine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@layout/device_index"
+        android:layout_alignParentLeft="true"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="60dp"
         android:text="@string/scan_engine"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/barcodeDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/device"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/barcode"
+                android:layout_width="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_weight="1"
+                android:text="Barcode"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/barcodeTxt"
+                android:layout_marginTop="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/batchId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_weight="1"
+                android:text="Batch ID"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/batchIdTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/batchDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_weight="1"
+                android:text="Batch Date"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/batchDateTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/labelSequence"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_weight="1"
+                android:text="Label Sequence"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/labelSequenceTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/scannedDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_weight="1"
+                android:text="Scan Date &amp; Time "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/scannedDateTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <ToggleButton
         android:id="@+id/tbScanEngine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/tvScanEngine"
-        android:layout_alignBottom="@+id/tvScanEngine"
         android:layout_alignLeft="@+id/btnStopScan"
+        android:layout_alignBottom="@+id/tvScanEngine"
         android:textOff="OFF"
-        android:textOn="ON" />
+        android:textOn="ON"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/btnStartScan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/tvScanEngine"
+        android:layout_alignParentLeft="true"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="40dp"
-        android:text="@string/start_scan" />
+        android:text="@string/start_scan"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/btnStopScan"
@@ -43,18 +233,20 @@
         android:layout_alignBaseline="@+id/btnStartScan"
         android:layout_alignParentRight="true"
         android:layout_marginRight="30dp"
-        android:text="@string/stop_scan" />
+        android:text="@string/stop_scan"
+        android:visibility="invisible" />
 
     <TextView
+        android:visibility="invisible"
         android:id="@+id/tvMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/btnScannerSettings"
-        android:layout_below="@+id/btnStartScan"
-        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/barcodeDetails"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:fadeScrollbars="false"
         android:scrollbars="vertical" />
 
@@ -63,9 +255,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:textColor="#fff"
+        android:visibility="invisible"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="30dp"
         android:text="@string/scanner_settings" />
 
 </RelativeLayout>

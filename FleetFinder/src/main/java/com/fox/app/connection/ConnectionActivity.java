@@ -18,14 +18,21 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckedTextView;
-import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.avery.sampleapp.R;
-import com.fox.app.SampleAppActivity;
+import com.fox.app.Adapter.DeviceAdapter;
+import com.fox.app.Activities.SampleAppActivity;
 import com.fox.app.SampleApplication;
+import com.fox.app.Utils.SharedPreferenceMethod;
+import com.fox.app.Adapter.UnpairedDevicesAdapter;
 import com.fox.app.scanner.ScannerActivity;
 
+import java.util.ArrayList;
 import java.util.Set;
 
 import avd.api.core.ConnectionType;
@@ -36,19 +43,23 @@ import avd.api.core.exceptions.ApiPrinterException;
 import avd.api.core.exceptions.ApiScannerException;
 import avd.api.devices.management.DeviceConnectionInfo;
 
-public class ConnectionActivity extends SampleAppActivity {
+public class ConnectionActivity extends SampleAppActivity implements DeviceAdapter.GetDevice, UnpairedDevicesAdapter.GetDevice {
     private static final int REQUEST_ENABLE_BT = 3;
-
-    private ListView pairedListView = null;
-    private ListView newDevicesListView = null;
-
+    SharedPreferenceMethod sharedPreferenceMethod;
+    private RecyclerView pairedListView = null;
+    private RecyclerView newDevicesListView = null;
+    ArrayList<String> pairedDeviceList = new ArrayList<>();
+    ArrayList<String> unpairedDeviceList = new ArrayList<>();
     private ProgressDialog progressDialog = null;
-
+    DeviceAdapter deviceAdapter;
+    UnpairedDevicesAdapter unpairedDevicesAdapter;
     private BluetoothAdapter bluetoothAdapter;
     private ArrayAdapter<String> pairedDevicesArrayAdapter;
     private ArrayAdapter<String> newDevicesArrayAdapter;
-
+    DeviceAdapter.GetDevice getDevice;
+    String selectedDevice="";
     private SampleApplication application = null;
+    private int getPosition = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,6 +67,7 @@ public class ConnectionActivity extends SampleAppActivity {
         this.setContentView(R.layout.activity_connection);
 
         application = ((SampleApplication) getApplication());
+        sharedPreferenceMethod = new SharedPreferenceMethod(this);
         application.requiredDevice = application.NO_DEVICES;
         application.lastActivityForAnyDevice = ConnectionActivity.class;
 
@@ -63,19 +75,31 @@ public class ConnectionActivity extends SampleAppActivity {
         scanButton.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 doDiscovery();
+                Toast.makeText(application, "Scanning for new Devices...", Toast.LENGTH_SHORT).show();
             }
         });
+        getActionBar().hide();
 
-        pairedDevicesArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_multiple_choice);
-        newDevicesArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_multiple_choice);
+        deviceAdapter = new DeviceAdapter(this, pairedDeviceList, sharedPreferenceMethod);
+        unpairedDevicesAdapter = new UnpairedDevicesAdapter(this, unpairedDeviceList);
 
-        pairedListView = (ListView) findViewById(R.id.paired_devices);
-        pairedListView.setAdapter(pairedDevicesArrayAdapter);
-        pairedListView.setOnItemClickListener(mDeviceClickListener);
+//        newDevicesArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_multiple_choice);
 
-        newDevicesListView = (ListView) findViewById(R.id.new_devices);
-        newDevicesListView.setAdapter(newDevicesArrayAdapter);
-        newDevicesListView.setOnItemClickListener(mDeviceClickListener);
+
+        deviceAdapter.setOnClickLister(this);
+        unpairedDevicesAdapter.setOnClickLister(this);
+        pairedListView = findViewById(R.id.paired_devices);
+        pairedListView.setHasFixedSize(true);
+        pairedListView.setItemAnimator(new DefaultItemAnimator());
+        pairedListView.setLayoutManager(new LinearLayoutManager(this));
+//        pairedListView.setOnItemClickListener(mDeviceClickListenerPaired);
+
+        newDevicesListView = findViewById(R.id.new_devices);
+        newDevicesListView.setHasFixedSize(true);
+        newDevicesListView.setLayoutManager(new LinearLayoutManager(this));
+        newDevicesListView.setItemAnimator(new DefaultItemAnimator());
+        newDevicesListView.setAdapter(unpairedDevicesAdapter);
+//        newDevicesListView.setOnItemClickListener(mDeviceClickListener);
 
         // This will enable screen controls refreshment every time the screen is entered or an action requiring screen controls update happens
         IntentFilter filter = new IntentFilter(SampleApplication.INTENT_ACTION_UPDATE_SCREEN_CONTROLS);
@@ -92,7 +116,6 @@ public class ConnectionActivity extends SampleAppActivity {
         // This will enable setting an appropriate title and enabling list of found devices for selection in a response to the event when a new search for bluetooth devices is concluded
         filter = new IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
         this.registerReceiver(mReceiver, filter);
-
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
     }
 
@@ -108,13 +131,12 @@ public class ConnectionActivity extends SampleAppActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
         if (bluetoothAdapter != null) {
             bluetoothAdapter.cancelDiscovery();
         }
-
         // This will disable all reactions to bluetooth actions and screen refreshment requirements
         unregisterReceiver(mReceiver);
+
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -162,7 +184,6 @@ public class ConnectionActivity extends SampleAppActivity {
             }
         }
     };
-
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -172,21 +193,26 @@ public class ConnectionActivity extends SampleAppActivity {
             else if (BluetoothDevice.ACTION_FOUND.equals(action)) {
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
                 if (device.getBondState() != BluetoothDevice.BOND_BONDED) {
-                    newDevicesArrayAdapter.add(device.getName() + "\n" + device.getAddress());
+//                    newDevicesArrayAdapter.add(device.getName() + "\n" + device.getAddress());
+                    unpairedDeviceList.add(device.getName() + "\n" + device.getAddress());
                 }
             } else if (BluetoothAdapter.ACTION_DISCOVERY_STARTED.equals(action)) {
-                newDevicesArrayAdapter.clear();
+//                newDevicesArrayAdapter.clear();
+                unpairedDeviceList.clear();
                 setTitle(R.string.scanning);
             } else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)) {
                 setProgressBarIndeterminateVisibility(false);
                 setTitle(R.string.select_device);
-                if (newDevicesArrayAdapter.getCount() == 0) {
+                if (unpairedDevicesAdapter.getItemCount() == 0) {
                     String noDevices = getResources().getText(R.string.none_found).toString();
-                    newDevicesArrayAdapter.add(noDevices);
+//                    newDevicesArrayAdapter.add(noDevices);
+                    unpairedDeviceList.add(noDevices);
+
                     newDevicesListView.setEnabled(false);
                 } else
                     newDevicesListView.setEnabled(true);
             }
+            newDevicesListView.setAdapter(unpairedDevicesAdapter);
         }
     };
 
@@ -209,21 +235,44 @@ public class ConnectionActivity extends SampleAppActivity {
     }
 
     private void displayPairedDevices() {
-        pairedDevicesArrayAdapter.clear();
+//        pairedDevicesArrayAdapter.clear();
+        pairedDeviceList.clear();
         Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
         if (pairedDevices.size() > 0) {
             pairedListView.setEnabled(true);
             findViewById(R.id.title_paired_devices).setVisibility(View.VISIBLE);
             for (BluetoothDevice device : pairedDevices) {
-                pairedDevicesArrayAdapter.add(device.getName() + "\n" + device.getAddress());
-                pairedListView.setItemChecked(pairedListView.getCount() - 1, application.connectedDevicesData.containsKey(device.getName()));
+//                pairedDevicesArrayAdapter.add(device.getName() + "\n" + device.getAddress());
+                pairedDeviceList.add(device.getName() + "\n" + device.getAddress());
+//                pairedListView.setItemChecked(pairedListView.getCount() - 1, application.connectedDevicesData.containsKey(device.getName()));
             }
+            pairedListView.setAdapter(deviceAdapter);
+
         } else {
             String noDevices = getResources().getText(R.string.none_paired).toString();
-            pairedDevicesArrayAdapter.add(noDevices);
+//            pairedDevicesArrayAdapter.add(noDevices);
+            pairedDeviceList.add(noDevices);
             pairedListView.setEnabled(false);
         }
-        pairedDevicesArrayAdapter.notifyDataSetChanged();
+//        pairedDevicesArrayAdapter.notifyDataSetChanged();
+//        deviceAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void deviceDetails(String Device, int position) {
+        String[] deviceParams = Device.split("\n");
+        getPosition = position;
+        // Instead of probing the text view for being checked, we check if the device specified in the text view is actually connected.
+        // On some devices text view isChecked property is set to true later than this probing is executed.
+        if (application.connectedDevicesData.containsKey(deviceParams[0].toString())) {
+            application.eraseDevice(deviceParams[0]);
+            showMessageBox("Device Disconnected", "Device " + deviceParams[0] + " has been successfully disconnected.", "Ok", null, null, null, null);
+        } else {
+            selectedDevice = Device;
+            progressDialog = ProgressDialog.show(ConnectionActivity.this, "", getResources().getText(R.string.connecting).toString());
+            ConnectTask task = new ConnectTask();
+            task.execute(deviceParams[0], deviceParams[1], Device);
+        }
     }
 
     private class ConnectTask extends AsyncTask<String, Void, Integer> {
@@ -247,10 +296,15 @@ public class ConnectionActivity extends SampleAppActivity {
                 application.createDevice(new DeviceConnectionInfo(deviceSerial, deviceAddress, ConnectionType.Bluetooth));
                 application.currentDeviceName = deviceSerial;
                 result = CT_SUCCESS;
+
+                if(!selectedDevice.equals("")) {
+                    sharedPreferenceMethod.saveDeviceName(selectedDevice);
+                }
 //                showMessageBox("Device Connected", "Device " + deviceSerial + " has been successfully connected.", "Ok", null, null, null, null);
 //                Toast.makeText(ConnectionActivity.this, "Device Connected " + deviceSerial, Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(ConnectionActivity.this, ScannerActivity.class));
-
+                Intent intent = new Intent(ConnectionActivity.this, ScannerActivity.class);
+                intent.putExtra("Scanner", "scanner");
+                startActivity(intent);
             } catch (ApiDeviceManagerException e) {
                 showErrorMessageBox("Device manager error", e, "Ok", null, null, null, null);
             } catch (ApiDeviceException e) {
@@ -262,43 +316,39 @@ public class ConnectionActivity extends SampleAppActivity {
             } catch (ApiScannerException e) {
                 showErrorMessageBox("Scanner error", e, "Ok", null, null, null, null);
             }
-
             return result;
         }
 
         protected void onPostExecute(Integer result) {
-            ListView parentListView = null;
+            RecyclerView pListView = null;
+            RecyclerView parentListView = null;
             int itemIndex = -1;
 
-            itemIndex = newDevicesArrayAdapter.getPosition(deviceInfo);
+            itemIndex = getPosition;
             if (itemIndex != -1)
                 parentListView = newDevicesListView;
             else {
-                parentListView = pairedListView;
-                itemIndex = pairedDevicesArrayAdapter.getPosition(deviceInfo);
+                pListView = pairedListView;
+                itemIndex = getPosition;
             }
 
             progressDialog.dismiss();
             if (result == CT_SUCCESS) {
                 if (parentListView == newDevicesListView) {
-                    newDevicesListView.setItemChecked(itemIndex, false);
-                    newDevicesArrayAdapter.remove(deviceInfo);
                     displayPairedDevices();
                 }
             } else
-                parentListView.setItemChecked(itemIndex, false);
-
-            newDevicesArrayAdapter.notifyDataSetChanged();
-            sendBroadcast(new Intent(SampleApplication.INTENT_ACTION_UPDATE_SCREEN_CONTROLS));
+//                parentListView.setItemChecked(itemIndex, false);
+//                unpairedDevicesAdapter.notifyDataSetChanged();
+                sendBroadcast(new Intent(SampleApplication.INTENT_ACTION_UPDATE_SCREEN_CONTROLS));
         }
     }
-
     @Override
     protected void onPause() {
-        progressDialog.dismiss();
-
+        if (progressDialog != null) {
+            progressDialog.dismiss();
+        }
         super.onPause();
-
     }
 
 

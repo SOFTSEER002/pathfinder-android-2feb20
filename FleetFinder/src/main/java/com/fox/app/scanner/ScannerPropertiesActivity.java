@@ -19,7 +19,7 @@ import avd.api.core.ScanMode;
 import avd.api.core.exceptions.ApiConfigurationException;
 import avd.api.core.exceptions.ApiException;
 import avd.api.core.exceptions.ApiScannerException;
-import com.fox.app.PropertiesSettingActivity;
+import com.fox.app.Activities.PropertiesSettingActivity;
 import com.fox.app.SampleApplication;
 import avd.api.scanners.ScannerSe4500;
 import avd.sdk.CompanionAPIConstants;

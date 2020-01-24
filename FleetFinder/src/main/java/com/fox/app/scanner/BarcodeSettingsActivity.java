@@ -12,7 +12,7 @@ import com.fox.app.scanner.barcodesettings.QRCodeActivity;
 import com.fox.app.scanner.barcodesettings.UPCActivity;
 import com.avery.sampleapp.R;
 import avd.api.core.exceptions.ApiScannerException;
-import com.fox.app.SampleAppActivity;
+import com.fox.app.Activities.SampleAppActivity;
 import com.fox.app.SampleApplication;
 import com.fox.app.scanner.barcodesettings.CodaBarActivity;
 import com.fox.app.scanner.barcodesettings.Code128Activity;

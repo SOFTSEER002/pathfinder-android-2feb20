@@ -1,52 +1,95 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:background="#fff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
-    <include layout="@layout/device_index" />
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/sample_app_active" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Fox App"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <include
+        android:id="@+id/viewDevice"
+        layout="@layout/device_index" />
 
     <Button
         android:id="@+id/btnConnection"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="@string/connection" />
-
-    <Button
-        android:id="@+id/btnSystem"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/system" />
-
-    <Button
-        android:id="@+id/btnPrinter"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/printer" />
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/connection"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/btnScanner"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/scanner" />
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/scanner"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnPrinter"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/printer"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnSystem"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/system"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/btnPrinterScenarios"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/printer_scenarios" />
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/printer_scenarios"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/btnResourceManagement"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Resource Management" />
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:text="Resource Management"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
 
 </LinearLayout>

@@ -2,12 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fox.app"
     android:versionCode="1"
-    android:versionName="Development" >
+    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -15,19 +16,19 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name="com.fox.app.SampleApplication"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:configChanges="keyboardHidden|orientation|screenSize"
         android:debuggable="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/sample_app_active"
         android:label="@string/app_name"
         android:screenOrientation="portrait"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.fox.app.MainActivity"
+            android:name="com.fox.app.Activities.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_main"
             android:launchMode="singleTop"
@@ -166,7 +167,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.fox.app.ResourcesActivity"
+            android:name="com.fox.app.Activities.ResourcesActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_resources"
             android:screenOrientation="portrait"
@@ -179,7 +180,11 @@
             android:screenOrientation="portrait" >
         </activity>
 
-        <service android:name="com.fox.app.DeviceService" />
+        <service android:name="com.fox.app.Utils.DeviceService" />
+
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent" />
     </application>
 
 </manifest>

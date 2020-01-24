@@ -24,6 +24,8 @@ dependencies {
     implementation 'org.slf4j:slf4j-api:1.7.30'
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.karumi:dexter:6.0.1'
     implementation 'com.macroyau:blue2serial:0.1.5'
     compile files('libs/AD Android API.jar')
 }

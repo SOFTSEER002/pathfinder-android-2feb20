@@ -3,9 +3,9 @@
     <Energy>Normal</Energy>
     <Quantity>1</Quantity>
     <LabelSize
-        length=".87"
+        length=".610"
         units="Inches"
-        width="1.8"
+        width="1.7"
     />
     <Command>Print</Command>
 

@@ -6,7 +6,7 @@ import android.widget.Button;
 import com.avery.sampleapp.R;
 import avd.api.core.exceptions.ApiDeviceException;
 import avd.api.core.exceptions.ApiScannerException;
-import com.fox.app.SampleAppActivity;
+import com.fox.app.Activities.SampleAppActivity;
 import com.fox.app.SampleApplication;
 import com.fox.app.SampleApplication.DeviceData;
 

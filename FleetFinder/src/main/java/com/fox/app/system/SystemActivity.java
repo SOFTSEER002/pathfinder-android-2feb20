@@ -26,7 +26,7 @@ import avd.api.core.exceptions.ApiDeviceException;
 import avd.api.core.exceptions.ApiException;
 import avd.api.core.imports.FeedButtonMode;
 import avd.api.core.imports.TriggerMode;
-import com.fox.app.PropertiesSettingActivity;
+import com.fox.app.Activities.PropertiesSettingActivity;
 import com.fox.app.SampleApplication;
 
 public class SystemActivity extends PropertiesSettingActivity {

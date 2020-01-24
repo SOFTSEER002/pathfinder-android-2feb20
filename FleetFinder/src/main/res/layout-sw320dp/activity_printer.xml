@@ -3,7 +3,32 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center_horizontal"
-    android:orientation="vertical" >
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:id="@+id/toolbar"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_gravity="left"
+            android:src="@drawable/sample_app_active"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Printer"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#fff"/>
+    </androidx.appcompat.widget.Toolbar>
 
     <include layout="@layout/device_index" />
 
@@ -11,73 +36,100 @@
         android:id="@+id/btnResync"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/resync_printer" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/resync_printer"
+        android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnGoToBlackMark"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/go_to_black_mark" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/go_to_black_mark"
+        android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnCalibrate"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/calibrate_black_mark" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/calibrate_black_mark"
+        android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnFeedLabel"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/feed_one_label" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/feed_one_label"
+        android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnClearError"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/clear_error" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/clear_error"
+        android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnAbortError"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/abort_error" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/abort_error"
+        android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnAbortAllJobs"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/abort_all_jobs" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/abort_all_jobs"
+        android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnPrintSample"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/print_sample" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/print_sample"
+        android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnProperties"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/properties" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/properties"
+        android:textColor="#fff" />
 
 </LinearLayout>

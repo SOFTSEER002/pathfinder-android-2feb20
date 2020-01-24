@@ -22,7 +22,7 @@ import avd.api.core.exceptions.ApiException;
 import avd.api.core.exceptions.ApiPrinterException;
 import avd.api.core.imports.EnergyType;
 import avd.api.printers.Printer6140;
-import com.fox.app.PropertiesSettingActivity;
+import com.fox.app.Activities.PropertiesSettingActivity;
 import com.fox.app.SampleApplication;
 import avd.sdk.CompanionAPIConstants;
 
