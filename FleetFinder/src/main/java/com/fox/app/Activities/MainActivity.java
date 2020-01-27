@@ -59,10 +59,8 @@ public class MainActivity extends SampleAppActivity {
         application.lastActivityForAnyDevice = MainActivity.class;
 
         application.initializeDeviceIndexButtons(this);
-
         if (!application.areResourcesRegistered) {
             registerResources();
-
             application.areResourcesRegistered = true;
         }
     }
@@ -84,7 +82,6 @@ public class MainActivity extends SampleAppActivity {
                     startActivity(new Intent(MainActivity.this, ScannerActivity.class));
                     FLAG = 1;
                 }
-
             }
             btnPrinter.setEnabled(isConnected);
             btnPrinterScenarios.setEnabled(isConnected);
@@ -110,13 +107,14 @@ public class MainActivity extends SampleAppActivity {
         dbHelper = new DBHelper(this);
         IntentFilter filter = new IntentFilter(SampleApplication.INTENT_ACTION_UPDATE_SCREEN_CONTROLS);
         registerReceiver(mReceiver, filter);
-        getActionBar().hide();
+
         tvDevice = findViewById(R.id.tvDevice);
 
         if (BluetoothAdapter.getDefaultAdapter() == null) {
             Toast.makeText(this, getResources().getText(R.string.bluetooth_is_not_available).toString(), Toast.LENGTH_LONG).show();
             finish();
         }
+
         Dexter.withActivity(this)
                 .withPermissions(Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 .withListener(new MultiplePermissionsListener() {

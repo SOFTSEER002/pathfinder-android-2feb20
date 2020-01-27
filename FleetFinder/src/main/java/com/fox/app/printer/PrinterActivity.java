@@ -26,7 +26,7 @@ public class PrinterActivity extends SampleAppActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_printer);
-        getActionBar().hide();
+
     }
 
     @Override

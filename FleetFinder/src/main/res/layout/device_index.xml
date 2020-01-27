@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="40dp"
-    android:background="#ffffffff"
+    android:background="#B8FFFF"
     android:orientation="horizontal">
 
     <Button
@@ -13,6 +13,7 @@
         android:layout_marginLeft="15dp"
         android:background="@color/colorPrimary"
         android:text="@string/left_arrow"
+        android:visibility="invisible"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@android:color/white" />
 
@@ -34,6 +35,7 @@
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:text="@string/right_arrow"
+        android:visibility="invisible"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
 </LinearLayout>

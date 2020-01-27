@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -25,8 +24,6 @@ import com.fox.app.printer.PrinterActivity;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import javax.security.auth.login.LoginException;
-
 import avd.api.core.IDevice;
 import avd.api.core.IScanner;
 import avd.api.core.exceptions.ApiPrinterException;
@@ -40,20 +37,25 @@ public class ScannerActivity extends SampleAppActivity {
     TextView barcodeTxt, batchIdTxt, batchDateTxt, labelSequenceTxt, ScanDateTxt;
     int FLAG = 0;
     SharedPreferenceMethod sharedPreferenceMethod;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_scanner);
-        getActionBar().hide();
+
 
         sharedPreferenceMethod = new SharedPreferenceMethod(this);
         barcodeTxt = findViewById(R.id.barcodeTxt);
-        batchIdTxt = findViewById(R.id.barcodeTxt);
-        batchDateTxt = findViewById(R.id.barcodeTxt);
-        labelSequenceTxt = findViewById(R.id.barcodeTxt);
-        ScanDateTxt = findViewById(R.id.barcodeTxt);
+        batchIdTxt = findViewById(R.id.batchIdTxt);
+        batchDateTxt = findViewById(R.id.batchDateTxt);
+        labelSequenceTxt = findViewById(R.id.labelSequenceTxt);
+        ScanDateTxt = findViewById(R.id.scannedDateTxt);
         connectionBtn = findViewById(R.id.connectionBtn);
         printerBtn = findViewById(R.id.printerbtn);
+
+        if (getIntent().hasExtra("Scanner")) {
+            Toast.makeText(ScannerActivity.this, "Pathfinder Connected!", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
@@ -92,16 +94,18 @@ public class ScannerActivity extends SampleAppActivity {
 
     @Override
     public void onBackPressed() {
-//        super.onBackPressed();
-        if(FLAG==0){
-            Toast.makeText(application, "Press back again to close the app!", Toast.LENGTH_SHORT).show();
-            FLAG=1;
-        }else{
+        super.onBackPressed();
+       /* if (FLAG == 0) {
+//            Toast.makeText(application, "Press back again to close the app!", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(ScannerActivity.this,ConnectionActivity.class));
+
+            FLAG = 1;
+        } else {
 
             String[] deviceParams = sharedPreferenceMethod.getDeviceName().split("\n");
 
 //            finishAffinity();
-        }
+        }*/
     }
 
     private void setupDefaults() {
@@ -231,8 +235,6 @@ public class ScannerActivity extends SampleAppActivity {
                     "Ok", null, null, null, null);
             return;
         }
-
-
         Intent propertiesIntent = new Intent(this, ScannerPropertiesActivity.class);
         startActivity(propertiesIntent);
     }

@@ -577,7 +577,6 @@ public class SampleApplication extends Application {
         deviceManager.removeDevice(deviceData.device.getConnection().getAddress());
 
         currentActivity.dismissAllAlertsForDevice(deviceData.device, false);
-
         connectedDevicesData.remove(deviceSerial);
         connectedDevicesNames.remove(deviceSerial);
 
@@ -738,8 +737,8 @@ public class SampleApplication extends Application {
 
     private void updateDeviceIndexPresentation() {
         if (connectedDevicesNames.size() < 2) {
-            btnDeviceLeft.setVisibility(View.INVISIBLE);
-            btnDeviceRight.setVisibility(View.INVISIBLE);
+//            btnDeviceLeft.setVisibility(View.INVISIBLE);
+//            btnDeviceRight.setVisibility(View.INVISIBLE);
         } else {
             if (connectedDevicesNames.indexOf(currentDeviceName) == 0) {
                 btnDeviceLeft.setVisibility(View.INVISIBLE);

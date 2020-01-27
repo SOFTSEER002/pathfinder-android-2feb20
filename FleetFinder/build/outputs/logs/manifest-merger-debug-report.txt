@@ -1,46 +1,50 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-180:12
-INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-180:12
-INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-180:12
-INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-180:12
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-160:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\76dc63e8399dfd1c3342c0297a781d7c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.macroyau:blue2serial:0.1.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jetified-blue2serial-0.1.5.aar\2f6a4f4ecd7cc58d3643f4a1a3a951c8\AndroidManifest.xml:2:1-15:12
 MERGED from [com.karumi:dexter:6.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\dexter-6.0.1.aar\8f940c775779ceee1f1b7b28c8c43aaf\AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\30ee7ed61ac8099b6b38462f19e70aba\AndroidManifest.xml:17:1-24:12
-MERGED from [com.macroyau:blue2serial:0.1.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jetified-blue2serial-0.1.5.aar\2f6a4f4ecd7cc58d3643f4a1a3a951c8\AndroidManifest.xml:2:1-15:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0.aar\301523ae2812602adf103bc0187cc58e\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\ecad9e73ccf981f8a260416286c1bafe\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\aeefd1b7c726dd76e2f9edca574da7b2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.2.aar\831005a3ccb6b30814a6ed80bf449a71\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\6301e40f4b32dbd328820265bb07e95b\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-1.0.0.aar\3f8ad9c93442fe8ccc1b6ded4606b54f\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\fda79588955b5a36391b1f6062d99ebd\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\ee49e13c638c4f81900a458f0ddaaf42\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\fd8647d9e141a2d917f27828ef7b67e2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\fb6fc7c6dc39e90d3b91d903329f5967\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-1.0.0.aar\d5ff385b1630b96c3df0959c20422766\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\94f393b4ed1d3feb212892683d76aa2c\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\788e0cf08040c328bacb055d542ce297\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\9a7d4330541c48bacce99861b5a1eaf0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\7c8fef5c3a782fc80748787a396a193f\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\fb6fc7c6dc39e90d3b91d903329f5967\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\c84feb6c2d908d742c57ba95b1401810\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\ef58122e6f02f2d36a13acb69cf2726a\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\b1ceef9ebe86d740289106f1bccead79\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\fd9786ef7448ac1c23d863b6b3ace882\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.1.aar\a54d37400e108812ecf45ecbff05a8b7\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\ad8541d90d8d5f506c365105263f9088\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\89c17e5c94954bd3e5845ccbab456494\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-resources-1.1.0.aar\ff6e20bcc3ee90c6c73adf39cf0c3443\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.1.0.aar\a68b57143454c95bdec6e096e0e41361\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0.aar\f42eb6083d484776c4703ee0e0dc14ae\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\8cdd1faa0a8ab03355ea7421ec8d9e62\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\d67dbbfd0760b4d085efd577a671a02e\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\b93ef73a2b1cf81b84cf528f1860f8fa\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\3750699d77023d37055ec7a38bac80f5\AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\78ff5d846cd156fb34246f5879f3e004\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\c68967366fd5ed8291ce7c7f2c7b44c8\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\b096e959c3facc6d08667db7d0c7262a\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\75d908deb9af6d43ee358862748d863b\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\d67dbbfd0760b4d085efd577a671a02e\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\1f7d5350fe6f2b7c9ca39f8ad9cf29bf\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\6e82f3e0be61d3b17f0e2cddfee83463\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\89af8b38b06d216c4d8f9104ec36ced1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\510bc58ffcc12b59e9e4f5a8748bc9b3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\d5f77934252de7d08b5d680080b10515\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-180:12
-INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-180:12
-INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-180:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\57150ae055a333826e27c2ce6e48e43b\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\dbf01c12f8c897aa5f34945e24c919b6\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.1.0.aar\502c649f4c4ebff6f1bc806ef848d732\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\8110683a2f50e58a0614786487ae5f3c\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:2:1-160:12
 	package
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml
@@ -60,7 +64,7 @@ ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\An
 	android:name
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:8:5-66
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:8:5-67
 	android:name
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:8:22-64
 uses-permission#android.permission.BLUETOOTH
@@ -94,95 +98,105 @@ ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\An
 	android:name
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:15:22-78
 application
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:16:5-178:19
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:17:5-158:19
+MERGED from [com.macroyau:blue2serial:0.1.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jetified-blue2serial-0.1.5.aar\2f6a4f4ecd7cc58d3643f4a1a3a951c8\AndroidManifest.xml:13:5-20
+MERGED from [com.macroyau:blue2serial:0.1.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jetified-blue2serial-0.1.5.aar\2f6a4f4ecd7cc58d3643f4a1a3a951c8\AndroidManifest.xml:13:5-20
 MERGED from [com.karumi:dexter:6.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\dexter-6.0.1.aar\8f940c775779ceee1f1b7b28c8c43aaf\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\dexter-6.0.1.aar\8f940c775779ceee1f1b7b28c8c43aaf\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\30ee7ed61ac8099b6b38462f19e70aba\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\30ee7ed61ac8099b6b38462f19e70aba\AndroidManifest.xml:22:5-20
-MERGED from [com.macroyau:blue2serial:0.1.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jetified-blue2serial-0.1.5.aar\2f6a4f4ecd7cc58d3643f4a1a3a951c8\AndroidManifest.xml:13:5-20
-MERGED from [com.macroyau:blue2serial:0.1.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jetified-blue2serial-0.1.5.aar\2f6a4f4ecd7cc58d3643f4a1a3a951c8\AndroidManifest.xml:13:5-20
-MERGED from [androidx.core:core:1.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\ad8541d90d8d5f506c365105263f9088\AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\ad8541d90d8d5f506c365105263f9088\AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\3750699d77023d37055ec7a38bac80f5\AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\3750699d77023d37055ec7a38bac80f5\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\ecad9e73ccf981f8a260416286c1bafe\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\ecad9e73ccf981f8a260416286c1bafe\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\8cdd1faa0a8ab03355ea7421ec8d9e62\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\8cdd1faa0a8ab03355ea7421ec8d9e62\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\dbf01c12f8c897aa5f34945e24c919b6\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\dbf01c12f8c897aa5f34945e24c919b6\AndroidManifest.xml:24:5-25:19
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:21:9-45
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:22:9-45
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\ad8541d90d8d5f506c365105263f9088\AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\8cdd1faa0a8ab03355ea7421ec8d9e62\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:20:9-41
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:21:9-41
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:18:9-70
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:19:9-70
 	android:icon
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:19:9-51
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:20:9-51
 	android:theme
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:22:9-40
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:23:9-40
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:17:9-53
-activity#com.fox.app.Activities.MainActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:23:9-34:20
-	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:28:13-49
-	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:26:13-56
-	android:launchMode
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:27:13-43
-	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:25:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:18:9-53
+activity#com.fox.app.Activities.SplashActivity
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:24:9-30:20
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:24:13-63
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:24:19-71
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:29:13-33:29
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:32:17-77
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:32:27-74
-activity#com.fox.app.printer.scenarios.PrinterScenariosActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:35:9-39:20
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:28:27-74
+activity#com.fox.app.Activities.AccessPathfinderActivity
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:31:9-84
+	android:name
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:31:19-81
+activity#com.fox.app.Activities.MainActivity
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:32:9-39:20
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:38:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:37:13-49
+	android:label
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:35:13-56
+	android:launchMode
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:36:13-43
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:37:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:34:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:36:13-82
-activity#com.fox.app.printer.PrinterActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:40:9-44:20
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:33:13-63
+activity#com.fox.app.printer.scenarios.PrinterScenariosActivity
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:40:9-43:52
 	android:screenOrientation
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:43:13-49
 	android:configChanges
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:42:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:41:13-63
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:41:13-82
+activity#com.fox.app.printer.PrinterActivity
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:44:9-47:52
+	android:screenOrientation
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:47:13-49
+	android:configChanges
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:46:13-74
+	android:name
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:45:13-63
 activity#com.fox.app.connection.ConnectionActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:45:9-49:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:48:9-51:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:48:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:51:13-49
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:47:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:50:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:46:13-69
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:49:13-69
 activity#com.fox.app.system.SystemActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:50:9-54:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:52:9-55:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:53:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:55:13-49
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:52:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:54:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:51:13-61
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:53:13-61
 activity#com.fox.app.scanner.ScannerActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:55:9-59:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:56:9-59:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:58:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:59:13-49
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:57:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:58:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:56:13-63
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:57:13-63
 activity#com.fox.app.printer.PrinterPropertiesActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:60:9-65:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:60:9-64:52
 	android:screenOrientation
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:64:13-49
 	android:label
@@ -192,227 +206,227 @@ ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\An
 	android:name
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:61:13-73
 activity#com.fox.app.scanner.ScannerPropertiesActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:66:9-71:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:65:9-69:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:70:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:69:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:69:13-70
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:68:13-70
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:68:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:67:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:67:13-73
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:66:13-73
 activity#com.fox.app.scanner.BarcodeSettingsActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:72:9-77:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:70:9-74:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:76:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:74:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:75:13-68
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:73:13-68
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:74:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:72:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:73:13-71
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:71:13-71
 activity#com.fox.app.scanner.barcodesettings.CodaBarActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:78:9-83:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:75:9-79:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:82:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:79:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:81:13-60
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:78:13-60
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:80:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:77:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:79:13-79
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:76:13-79
 activity#com.fox.app.scanner.barcodesettings.Code128Activity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:84:9-89:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:80:9-84:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:88:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:84:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:87:13-59
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:83:13-59
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:86:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:82:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:85:13-79
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:81:13-79
 activity#com.fox.app.scanner.barcodesettings.GS1ext2dActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:90:9-95:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:85:9-89:52
+	android:screenOrientation
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:89:13-49
+	android:label
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:88:13-60
+	android:configChanges
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:87:13-74
+	android:name
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:86:13-80
+activity#com.fox.app.scanner.barcodesettings.PDF_417Activity
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:90:9-94:52
 	android:screenOrientation
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:94:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:93:13-60
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:93:13-59
 	android:configChanges
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:92:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:91:13-80
-activity#com.fox.app.scanner.barcodesettings.PDF_417Activity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:96:9-101:20
-	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:100:13-49
-	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:99:13-59
-	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:98:13-74
-	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:97:13-79
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:91:13-79
 activity#com.fox.app.scanner.barcodesettings.MaxiCodeActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:102:9-107:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:95:9-99:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:106:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:99:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:105:13-61
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:98:13-61
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:104:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:97:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:103:13-80
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:96:13-80
 activity#com.fox.app.scanner.barcodesettings.QRCodeActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:108:9-113:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:100:9-104:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:112:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:104:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:111:13-58
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:103:13-58
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:110:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:102:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:109:13-78
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:101:13-78
 activity#com.fox.app.scanner.barcodesettings.DataMatrixActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:114:9-119:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:105:9-109:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:118:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:109:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:117:13-63
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:108:13-63
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:116:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:107:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:115:13-82
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:106:13-82
 activity#com.fox.app.scanner.barcodesettings.Gs1Activity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:120:9-125:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:110:9-114:52
+	android:screenOrientation
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:114:13-49
+	android:label
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:113:13-55
+	android:configChanges
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:112:13-74
+	android:name
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:111:13-75
+activity#com.fox.app.scanner.barcodesettings.Code39Activity
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:115:9-119:52
+	android:screenOrientation
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:119:13-49
+	android:label
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:118:13-58
+	android:configChanges
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:117:13-74
+	android:name
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:116:13-78
+activity#com.fox.app.scanner.barcodesettings.Code93Activity
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:120:9-124:52
 	android:screenOrientation
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:124:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:123:13-55
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:123:13-58
 	android:configChanges
 		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:122:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:121:13-75
-activity#com.fox.app.scanner.barcodesettings.Code39Activity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:126:9-131:20
-	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:130:13-49
-	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:129:13-58
-	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:128:13-74
-	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:127:13-78
-activity#com.fox.app.scanner.barcodesettings.Code93Activity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:132:9-137:20
-	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:136:13-49
-	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:135:13-58
-	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:134:13-74
-	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:133:13-78
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:121:13-78
 activity#com.fox.app.scanner.barcodesettings.D2of5Activity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:138:9-143:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:125:9-129:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:142:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:129:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:141:13-57
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:128:13-57
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:140:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:127:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:139:13-77
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:126:13-77
 activity#com.fox.app.scanner.barcodesettings.I2of5Activity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:144:9-149:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:130:9-134:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:148:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:134:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:147:13-57
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:133:13-57
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:146:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:132:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:145:13-77
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:131:13-77
 activity#com.fox.app.scanner.barcodesettings.MSIActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:150:9-155:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:135:9-139:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:154:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:139:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:153:13-55
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:138:13-55
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:152:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:137:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:151:13-75
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:136:13-75
 activity#com.fox.app.scanner.barcodesettings.UPCActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:156:9-161:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:140:9-144:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:160:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:144:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:159:13-55
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:143:13-55
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:158:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:142:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:157:13-75
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:141:13-75
 activity#com.fox.app.Activities.ResourcesActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:162:9-168:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:145:9-150:63
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:167:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:149:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:165:13-61
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:148:13-61
 	android:windowSoftInputMode
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:166:13-60
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:150:13-60
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:164:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:147:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:163:13-68
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:146:13-68
 activity#com.fox.app.filechooser.FileChooserActivity
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:169:9-174:20
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:151:9-155:52
 	android:screenOrientation
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:173:13-49
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:155:13-49
 	android:label
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:172:13-63
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:154:13-63
 	android:configChanges
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:171:13-74
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:153:13-74
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:170:13-71
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:152:13-71
 service#com.fox.app.Utils.DeviceService
-ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:176:9-67
+ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:157:9-67
 	android:name
-		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:176:18-64
+		ADDED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml:157:18-64
 uses-sdk
 INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml
 INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\76dc63e8399dfd1c3342c0297a781d7c\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\76dc63e8399dfd1c3342c0297a781d7c\AndroidManifest.xml:20:5-44
+MERGED from [com.macroyau:blue2serial:0.1.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jetified-blue2serial-0.1.5.aar\2f6a4f4ecd7cc58d3643f4a1a3a951c8\AndroidManifest.xml:7:5-9:41
+MERGED from [com.macroyau:blue2serial:0.1.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jetified-blue2serial-0.1.5.aar\2f6a4f4ecd7cc58d3643f4a1a3a951c8\AndroidManifest.xml:7:5-9:41
 MERGED from [com.karumi:dexter:6.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\dexter-6.0.1.aar\8f940c775779ceee1f1b7b28c8c43aaf\AndroidManifest.xml:22:5-24:41
 MERGED from [com.karumi:dexter:6.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\dexter-6.0.1.aar\8f940c775779ceee1f1b7b28c8c43aaf\AndroidManifest.xml:22:5-24:41
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\30ee7ed61ac8099b6b38462f19e70aba\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\30ee7ed61ac8099b6b38462f19e70aba\AndroidManifest.xml:20:5-44
-MERGED from [com.macroyau:blue2serial:0.1.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jetified-blue2serial-0.1.5.aar\2f6a4f4ecd7cc58d3643f4a1a3a951c8\AndroidManifest.xml:7:5-9:41
-MERGED from [com.macroyau:blue2serial:0.1.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jetified-blue2serial-0.1.5.aar\2f6a4f4ecd7cc58d3643f4a1a3a951c8\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0.aar\301523ae2812602adf103bc0187cc58e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0.aar\301523ae2812602adf103bc0187cc58e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\ecad9e73ccf981f8a260416286c1bafe\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\ecad9e73ccf981f8a260416286c1bafe\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.media:media:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\aeefd1b7c726dd76e2f9edca574da7b2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\aeefd1b7c726dd76e2f9edca574da7b2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.2.aar\831005a3ccb6b30814a6ed80bf449a71\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.2.aar\831005a3ccb6b30814a6ed80bf449a71\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\6301e40f4b32dbd328820265bb07e95b\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\6301e40f4b32dbd328820265bb07e95b\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-1.0.0.aar\3f8ad9c93442fe8ccc1b6ded4606b54f\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-1.0.0.aar\3f8ad9c93442fe8ccc1b6ded4606b54f\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\fda79588955b5a36391b1f6062d99ebd\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\fda79588955b5a36391b1f6062d99ebd\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\ee49e13c638c4f81900a458f0ddaaf42\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\ee49e13c638c4f81900a458f0ddaaf42\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\fd8647d9e141a2d917f27828ef7b67e2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\fd8647d9e141a2d917f27828ef7b67e2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\fb6fc7c6dc39e90d3b91d903329f5967\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\fb6fc7c6dc39e90d3b91d903329f5967\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-1.0.0.aar\d5ff385b1630b96c3df0959c20422766\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-1.0.0.aar\d5ff385b1630b96c3df0959c20422766\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\94f393b4ed1d3feb212892683d76aa2c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\94f393b4ed1d3feb212892683d76aa2c\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\788e0cf08040c328bacb055d542ce297\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\788e0cf08040c328bacb055d542ce297\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\9a7d4330541c48bacce99861b5a1eaf0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\9a7d4330541c48bacce99861b5a1eaf0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\7c8fef5c3a782fc80748787a396a193f\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\7c8fef5c3a782fc80748787a396a193f\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\fb6fc7c6dc39e90d3b91d903329f5967\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\fb6fc7c6dc39e90d3b91d903329f5967\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\c84feb6c2d908d742c57ba95b1401810\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\c84feb6c2d908d742c57ba95b1401810\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\ef58122e6f02f2d36a13acb69cf2726a\AndroidManifest.xml:20:5-44
@@ -421,14 +435,20 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\user
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\b1ceef9ebe86d740289106f1bccead79\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\fd9786ef7448ac1c23d863b6b3ace882\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\fd9786ef7448ac1c23d863b6b3ace882\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.1.aar\a54d37400e108812ecf45ecbff05a8b7\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.1.aar\a54d37400e108812ecf45ecbff05a8b7\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\ad8541d90d8d5f506c365105263f9088\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\ad8541d90d8d5f506c365105263f9088\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\89c17e5c94954bd3e5845ccbab456494\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\89c17e5c94954bd3e5845ccbab456494\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-resources-1.1.0.aar\ff6e20bcc3ee90c6c73adf39cf0c3443\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-resources-1.1.0.aar\ff6e20bcc3ee90c6c73adf39cf0c3443\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.1.0.aar\a68b57143454c95bdec6e096e0e41361\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.1.0.aar\a68b57143454c95bdec6e096e0e41361\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0.aar\f42eb6083d484776c4703ee0e0dc14ae\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0.aar\f42eb6083d484776c4703ee0e0dc14ae\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\8cdd1faa0a8ab03355ea7421ec8d9e62\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\8cdd1faa0a8ab03355ea7421ec8d9e62\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\d67dbbfd0760b4d085efd577a671a02e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\d67dbbfd0760b4d085efd577a671a02e\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\b93ef73a2b1cf81b84cf528f1860f8fa\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\b93ef73a2b1cf81b84cf528f1860f8fa\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\3750699d77023d37055ec7a38bac80f5\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\3750699d77023d37055ec7a38bac80f5\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\78ff5d846cd156fb34246f5879f3e004\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\78ff5d846cd156fb34246f5879f3e004\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\c68967366fd5ed8291ce7c7f2c7b44c8\AndroidManifest.xml:20:5-44
@@ -437,18 +457,20 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\user\.gradle\caches\transforms
 MERGED from [androidx.print:print:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\b096e959c3facc6d08667db7d0c7262a\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\75d908deb9af6d43ee358862748d863b\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\75d908deb9af6d43ee358862748d863b\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\d67dbbfd0760b4d085efd577a671a02e\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\d67dbbfd0760b4d085efd577a671a02e\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\1f7d5350fe6f2b7c9ca39f8ad9cf29bf\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\1f7d5350fe6f2b7c9ca39f8ad9cf29bf\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\6e82f3e0be61d3b17f0e2cddfee83463\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\6e82f3e0be61d3b17f0e2cddfee83463\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\89af8b38b06d216c4d8f9104ec36ced1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\89af8b38b06d216c4d8f9104ec36ced1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\510bc58ffcc12b59e9e4f5a8748bc9b3\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\510bc58ffcc12b59e9e4f5a8748bc9b3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\d5f77934252de7d08b5d680080b10515\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\d5f77934252de7d08b5d680080b10515\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\57150ae055a333826e27c2ce6e48e43b\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\57150ae055a333826e27c2ce6e48e43b\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\dbf01c12f8c897aa5f34945e24c919b6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\dbf01c12f8c897aa5f34945e24c919b6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.1.0.aar\502c649f4c4ebff6f1bc806ef848d732\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.1.0.aar\502c649f4c4ebff6f1bc806ef848d732\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\8110683a2f50e58a0614786487ae5f3c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\8110683a2f50e58a0614786487ae5f3c\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml
 INJECTED from C:\Users\user\Downloads\Avery SDK\FleetFinder\FleetFinder\src\main\AndroidManifest.xml
 	android:targetSdkVersion
