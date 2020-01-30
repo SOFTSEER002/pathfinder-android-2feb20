@@ -26,6 +26,7 @@
         android:icon="@drawable/sample_app_active"
         android:label="@string/app_name"
         android:screenOrientation="portrait"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.fox.app.Activities.SplashActivity" >
             <intent-filter>

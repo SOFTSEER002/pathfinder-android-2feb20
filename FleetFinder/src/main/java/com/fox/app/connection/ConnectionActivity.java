@@ -326,7 +326,6 @@ public class ConnectionActivity extends SampleAppActivity implements DeviceAdapt
                 Intent intent = new Intent(ConnectionActivity.this, ScannerActivity.class);
                 intent.putExtra("Scanner", "scanner");
                 startActivity(intent);
-
             } catch (ApiDeviceManagerException e) {
                 showErrorMessageBox("Device manager error", e, "Ok", null, null, null, null);
             } catch (ApiDeviceException e) {

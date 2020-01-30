@@ -64,7 +64,7 @@ public class AccessPathfinderActivity extends Activity {
                 if (response.code() == 200) {
                     customProgressBar.hideProgress();
                     Toast.makeText(AccessPathfinderActivity.this, "User Authenticated!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(AccessPathfinderActivity.this, ConnectionActivity.class);
+                    Intent intent = new Intent(AccessPathfinderActivity.this, MainActivity.class);
                     intent.putExtra("Scanner", "scanner");
                     startActivity(intent);
                     finish();

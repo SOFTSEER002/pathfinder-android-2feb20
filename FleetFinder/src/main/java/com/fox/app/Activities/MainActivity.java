@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -130,7 +131,12 @@ public class MainActivity extends SampleAppActivity {
         /*if (tvDevice.getText().toString().contains("Connected to")) {
             startActivity(new Intent(this, ScannerActivity.class));
         }*/
+if(getIntent().hasExtra("Scanner")){
+    Intent intent = new Intent(MainActivity.this, ConnectionActivity.class);
+    intent.putExtra("Scanner", "scanner");
+    startActivity(intent);
 
+}
         btnConnection = (Button) findViewById(R.id.btnConnection);
         btnConnection.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -254,6 +260,7 @@ public class MainActivity extends SampleAppActivity {
             if (!Arrays.asList(listOfResources).contains("Print LNT"))
                 application.registerResource(ResourceMediaType.Lnt, "Print LNT", "Print.LNT");
             if (!Arrays.asList(listOfResources).contains("Label Shipment LNT"))
+                Log.e("Label added!", "registerResources: Label added to path" );
                 application.registerResource(ResourceMediaType.Lnt, "Label Shipment LNT", "LabelShipment.lnt");
             if (!Arrays.asList(listOfResources).contains("Sample Label LNT"))
                 application.registerResource(ResourceMediaType.Lnt, "Sample Label LNT", "SampleLabel.LNT");

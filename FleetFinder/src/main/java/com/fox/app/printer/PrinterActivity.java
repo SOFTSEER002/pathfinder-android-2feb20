@@ -1,18 +1,27 @@
 package com.fox.app.printer;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Point;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Display;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import com.avery.sampleapp.R;
 import com.fox.app.Activities.SampleAppActivity;
 import com.fox.app.SampleApplication;
 import com.fox.app.SampleApplication.DeviceData;
+import com.google.zxing.WriterException;
 
+import java.io.ByteArrayOutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+import androidmads.library.qrgenearator.QRGContents;
+import androidmads.library.qrgenearator.QRGEncoder;
 import avd.api.core.IDevice;
 import avd.api.core.IPrinter;
 import avd.api.core.exceptions.ApiPrinterException;
@@ -143,17 +152,18 @@ public class PrinterActivity extends SampleAppActivity {
 
         String barcode = "203540749";
         String batchId = "FOX17337";
-        String batchDate = "2020-01-21";
-        String labelSequence = "1 of 100";
-        String scanTime = "2020/01/21 16:04:52";
-        String barcodeID = "203540749";
-        byte[][] stringText = {batchId.getBytes(), batchDate.getBytes(), labelSequence.getBytes(), scanTime.getBytes(), barcode.getBytes(), barcodeID.getBytes()};
+        Bitmap bmp = generateQR("89-96-FOX17643");
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] byteArray = stream.toByteArray();
+//            generateQR("89-96-FOX17643").
+        byte[][] stringText = {batchId.getBytes(),byteArray};
         if (application.allDevicesSelected()) {
             for (DeviceData deviceData : application.connectedDevicesData.values()) {
                 IDevice device = deviceData.device;
                 IPrinter printer = device.getPrinter();
                 try {
-                    printer.print("Data Print", 1, stringText);
+                    printer.print("Sample Print LNT", 1, stringText);
                 } catch (ApiPrinterException e) {
                     showStandardErrorMessageBox("Sample print failed", e, device);
                 }
@@ -162,12 +172,39 @@ public class PrinterActivity extends SampleAppActivity {
             IDevice device = application.getDevice();
             IPrinter printer = device.getPrinter();
             try {
-                printer.print("Label Shipment LNT", 1, stringText);
+                printer.print("Sample Print LNT", 1, stringText);
             } catch (ApiPrinterException e) {
                 showStandardErrorMessageBox("Sample print failed", e, device);
             }
         }
 
+    }
+
+    public Bitmap generateQR(String genID) {
+        QRGEncoder qrgEncoder;
+
+        WindowManager manager = (WindowManager) getSystemService(WINDOW_SERVICE);
+        Display display = manager.getDefaultDisplay();
+        Point point = new Point();
+        display.getSize(point);
+        int width = point.x;
+        int height = point.y;
+        int smallerDimension = width < height ? width : height;
+        smallerDimension = smallerDimension * 3 / 4;
+
+        qrgEncoder = new QRGEncoder(
+                genID, null,
+                QRGContents.Type.TEXT,
+                smallerDimension);
+        Bitmap bitmap = null;
+        try {
+            bitmap = qrgEncoder.encodeAsBitmap();
+
+
+        } catch (WriterException e) {
+            Log.e(this + "", e.toString());
+        }
+        return bitmap;
     }
 
     private void showProperties() {

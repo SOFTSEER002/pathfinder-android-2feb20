@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Avery SDK-FleetFinder.iml" filepath="$PROJECT_DIR$/Avery SDK-FleetFinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FleetFinder.iml" filepath="$PROJECT_DIR$/FleetFinder.iml" />
       <module fileurl="file://$PROJECT_DIR$/FleetFinder/FleetFinder-FleetFinder.iml" filepath="$PROJECT_DIR$/FleetFinder/FleetFinder-FleetFinder.iml" />
     </modules>
   </component>

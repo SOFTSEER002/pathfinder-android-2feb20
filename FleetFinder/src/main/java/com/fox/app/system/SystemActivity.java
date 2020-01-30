@@ -101,7 +101,7 @@ public class SystemActivity extends PropertiesSettingActivity {
 		});
 
 
-		RadioGroup rgTriggerMode = (RadioGroup) findViewById(R.id.rgTriggerMode);
+		RadioGroup rgTriggerMode =  findViewById(R.id.rgTriggerMode);
 		switch (device.getTriggerMode())
 		{
 		case Scan:

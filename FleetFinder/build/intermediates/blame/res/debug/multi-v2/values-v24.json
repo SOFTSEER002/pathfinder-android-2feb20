@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\user\\Downloads\\Avery SDK\\FleetFinder\\FleetFinder\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "E:\\FleetFinder\\FleetFinder\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\media-1.0.0.aar\\aeefd1b7c726dd76e2f9edca574da7b2\\res\\values-v24\\values-v24.xml",

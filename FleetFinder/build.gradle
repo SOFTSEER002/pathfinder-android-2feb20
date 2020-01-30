@@ -28,6 +28,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.karumi:dexter:6.0.1'
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
     implementation 'com.macroyau:blue2serial:0.1.5'
     compile files('libs/AD Android API.jar')
 }

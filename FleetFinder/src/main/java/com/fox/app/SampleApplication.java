@@ -76,6 +76,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static android.content.ContentValues.TAG;
+
 public class SampleApplication extends Application {
     private static final String LOG_FOLDER_ENV_VARIABLE = "av.sampleapp.logpath";
     private static final String LOG_FOLDER = "Download/ApiLog";
@@ -378,11 +380,11 @@ public class SampleApplication extends Application {
                     if (ni == null || !ni.isAvailable() || !ni.isConnected()) {
 //                        Toast.makeText(SampleApplication.this, "No Internet Connection!", Toast.LENGTH_SHORT).show();
                         try {
-                            device.playSound("LookFail",1);
+                            device.playSound("LookFail", 1);
                         } catch (ApiDeviceException e) {
                             e.printStackTrace();
                         }
-                    }else{
+                    } else {
                         //                   get Data from server
                         getBarcodeResponse(scanData);
                     }
@@ -492,7 +494,8 @@ public class SampleApplication extends Application {
             public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
 
                 if (response.code() == 200) {
-                    printSample(response.body().getBarcode(), response.body().getBatchId(), response.body().getBatchDate(), response.body().getLabelSequence(), response.body().getScanTime(), response.body().getBarcode());
+                    String barToQRcode = response.body().getLabelSequence() + response.body().getBatchId();
+                    printSample(response.body().getBarcode(), response.body().getBatchId(), response.body().getBatchDate(), response.body().getLabelSequence(), response.body().getScanTime(), barToQRcode);
                     tvbarcodeTxt.setText(response.body().getBarcode());
                     tvbatchIdTxt.setText(response.body().getBatchId());
                     tvbatchDateTxt.setText(response.body().getBatchDate());
@@ -598,14 +601,23 @@ public class SampleApplication extends Application {
 
     private void printSample(String barcode, String batchId, String batchDate, String labelSequence, String scanTime, String barcodeID) {
 
-
-        byte[][] stringText = {batchId.getBytes(), batchDate.getBytes(), labelSequence.getBytes(), scanTime.getBytes(), barcode.getBytes(), barcodeID.getBytes()};
+        String batch = batchId.substring(3, 7);
+        String ls = "1";
+        Log.e(TAG, "printSample: SubString" + batch);
+        String[] items = labelSequence.split("of");
+        for (String item : items)
+        {
+            System.out.println("item = " + item);
+        }
+        String scanDate =scanTime.substring(0,16);
+        byte[][] stringTextArray = {barcode.getBytes(), batchId.getBytes(), batch.getBytes(), items[0].getBytes(), items[1].getBytes(),
+                scanDate.getBytes(), barcodeID.getBytes()};
         if (this.allDevicesSelected()) {
             for (DeviceData deviceData : this.connectedDevicesData.values()) {
                 IDevice device = deviceData.device;
                 IPrinter printer = device.getPrinter();
                 try {
-                    printer.print("Label Shipment LNT", 1, stringText);
+                    printer.print("Label Shipment LNT", 1, stringTextArray);
                 } catch (ApiPrinterException e) {
                     e.printStackTrace();
                 }
@@ -614,7 +626,7 @@ public class SampleApplication extends Application {
             IDevice device = this.getDevice();
             IPrinter printer = device.getPrinter();
             try {
-                printer.print("Label Shipment LNT", 1, stringText);
+                printer.print("Label Shipment LNT", 1, stringTextArray);
             } catch (ApiPrinterException e) {
                 e.printStackTrace();
             }
@@ -648,7 +660,6 @@ public class SampleApplication extends Application {
             if (currentDeviceName != NO_DEVICES) // At least one device is connected. We will redirect the user to the last activity that does not require a specific device.
                 availableActivity = lastActivityForAnyDevice;
         }
-
         // Show message box on proper activity, hence it needs to be shown after the intent is sent.
         currentActivity.showMessageBox("Connection error", message, "Ok", new IgnoreReconnectionListener(availableActivity), null, null, null);
     }
@@ -752,8 +763,11 @@ public class SampleApplication extends Application {
             }
         }
         if (currentDeviceName.equals("No Devices")) {
-            tvDeviceName.setText("Device is not Connected");
-            sharedPreferenceMethod.saveDeviceName("");
+            if (tvDeviceName != null) {
+                tvDeviceName.setText("Device is not Connected");
+                sharedPreferenceMethod.saveDeviceName("");
+            }
+
         } else {
             tvDeviceName.setText("Connected to " + currentDeviceName);
 
