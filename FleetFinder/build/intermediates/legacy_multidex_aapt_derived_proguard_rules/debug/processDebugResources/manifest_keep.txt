@@ -1,0 +1,2 @@
+# Referenced at E:\FleetFinder\FleetFinder\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:34
+-keep class com.fox.app.SampleApplication { <init>(...); }
