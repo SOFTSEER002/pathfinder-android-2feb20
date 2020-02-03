@@ -100,19 +100,21 @@ public class DeviceService extends Service {
 		startMyOwnForeground();
 	}
 
-	@TargetApi(Build.VERSION_CODES.O)
 	private void startMyOwnForeground(){
 		intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
 		String NOTIFICATION_CHANNEL_ID = "DeviceService";
 		String channelName = "bgchannel";
-		NotificationChannel chan = new NotificationChannel(NOTIFICATION_CHANNEL_ID, channelName, NotificationManager.IMPORTANCE_DEFAULT);
+		NotificationChannel chan = null;
+		if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+			chan = new NotificationChannel(NOTIFICATION_CHANNEL_ID, channelName, NotificationManager.IMPORTANCE_DEFAULT);
+
 		chan.setLightColor(Color.BLUE);
 		chan.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
 		NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 		assert manager != null;
 		manager.createNotificationChannel(chan);
-
+		}
 
 		NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this,NOTIFICATION_CHANNEL_ID);
 		Notification notification = notificationBuilder

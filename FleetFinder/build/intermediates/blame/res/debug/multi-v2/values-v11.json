@@ -19,6 +19,25 @@
                         "endColumns": "74",
                         "endOffsets": "125"
                     }
+                },
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-appinvite-9.8.0.aar\\f53daaadc036ea00afbd649c3aecd74d\\res\\values-v11\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "172",
+                        "endLines": "5",
+                        "endColumns": "8",
+                        "endOffsets": "293"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "130",
+                        "endLines": "4",
+                        "endColumns": "8",
+                        "endOffsets": "251"
+                    }
                 }
             ]
         }

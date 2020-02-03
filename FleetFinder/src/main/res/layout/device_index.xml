@@ -13,7 +13,7 @@
         android:layout_marginLeft="15dp"
         android:background="@color/colorPrimary"
         android:text="@string/left_arrow"
-        android:visibility="invisible"
+        android:visibility="gone"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@android:color/white" />
 
@@ -22,9 +22,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:gravity="center"
+        android:layout_gravity="center_vertical"
         android:text="@string/no_devices"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
 
     <Button
         android:id="@+id/btnScrollDeviceIndexRight"
@@ -35,7 +38,7 @@
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:text="@string/right_arrow"
-        android:visibility="invisible"
+        android:visibility="gone"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
 </LinearLayout>

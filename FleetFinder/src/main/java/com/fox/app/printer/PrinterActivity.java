@@ -149,7 +149,6 @@ public class PrinterActivity extends SampleAppActivity {
 
     private void printSample() {
         printSampleIndex++;
-
         String barcode = "203540749";
         String batchId = "FOX17337";
         Bitmap bmp = generateQR("89-96-FOX17643");
@@ -163,7 +162,7 @@ public class PrinterActivity extends SampleAppActivity {
                 IDevice device = deviceData.device;
                 IPrinter printer = device.getPrinter();
                 try {
-                    printer.print("Sample Print LNT", 1, stringText);
+                    printer.print("BoldItalicUnderline NewLine LNT", 1, stringText);
                 } catch (ApiPrinterException e) {
                     showStandardErrorMessageBox("Sample print failed", e, device);
                 }
@@ -172,7 +171,7 @@ public class PrinterActivity extends SampleAppActivity {
             IDevice device = application.getDevice();
             IPrinter printer = device.getPrinter();
             try {
-                printer.print("Sample Print LNT", 1, stringText);
+                printer.print("BoldItalicUnderline NewLine LNT", 1, stringText);
             } catch (ApiPrinterException e) {
                 showStandardErrorMessageBox("Sample print failed", e, device);
             }

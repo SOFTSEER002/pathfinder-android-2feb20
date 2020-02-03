@@ -4,6 +4,40 @@
             "outputFile": "E:\\FleetFinder\\FleetFinder\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-cast-framework-9.8.0.aar\\26894720b242267ec9b2161dfd234490\\res\\values-land\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "0,0,0,0",
+                        "startOffsets": "183,271,358,453",
+                        "endColumns": "87,86,94,90",
+                        "endOffsets": "270,357,452,543"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "264,356,447,546",
+                        "endColumns": "91,90,98,94",
+                        "endOffsets": "351,442,541,636"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-1.0.0-alpha5.aar\\56340442f41016d39ca58a2c09d6b26d\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,130,208",
+                        "endColumns": "74,77,74",
+                        "endOffsets": "125,203,278"
+                    },
+                    "to": {
+                        "startLines": "9,10,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "641,716,794",
+                        "endColumns": "74,77,74",
+                        "endOffsets": "711,789,864"
+                    }
+                },
+                {
                     "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\30ee7ed61ac8099b6b38462f19e70aba\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
@@ -14,12 +48,12 @@
                         "endOffsets": "222"
                     },
                     "to": {
-                        "startLines": "5",
+                        "startLines": "12",
                         "startColumns": "4",
-                        "startOffsets": "264",
-                        "endLines": "8",
+                        "startOffsets": "869",
+                        "endLines": "15",
                         "endColumns": "10",
-                        "endOffsets": "431"
+                        "endOffsets": "1036"
                     }
                 },
                 {

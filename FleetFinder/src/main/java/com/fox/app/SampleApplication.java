@@ -385,6 +385,7 @@ public class SampleApplication extends Application {
                             e.printStackTrace();
                         }
                     } else {
+                        Log.e(TAG, "onScanReceived: "+scanData );
                         //                   get Data from server
                         getBarcodeResponse(scanData);
                     }
@@ -494,7 +495,7 @@ public class SampleApplication extends Application {
             public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
 
                 if (response.code() == 200) {
-                    String barToQRcode = response.body().getLabelSequence() + response.body().getBatchId();
+                    String barToQRcode = response.body().getBatchId();
                     printSample(response.body().getBarcode(), response.body().getBatchId(), response.body().getBatchDate(), response.body().getLabelSequence(), response.body().getScanTime(), barToQRcode);
                     tvbarcodeTxt.setText(response.body().getBarcode());
                     tvbatchIdTxt.setText(response.body().getBatchId());
@@ -601,17 +602,21 @@ public class SampleApplication extends Application {
 
     private void printSample(String barcode, String batchId, String batchDate, String labelSequence, String scanTime, String barcodeID) {
 
-        String batch = batchId.substring(3, 7);
+        String batch = batchId.substring(4, 8);
         String ls = "1";
         Log.e(TAG, "printSample: SubString" + batch);
         String[] items = labelSequence.split("of");
+        String barcode_1= "s"+barcode;
         for (String item : items)
         {
             System.out.println("item = " + item);
         }
+        String qrCode="X"+items[0].trim()+"-"+items[1].trim()+"-"+barcodeID.trim();
+        Log.e(TAG, "printSample: "+qrCode );
         String scanDate =scanTime.substring(0,16);
         byte[][] stringTextArray = {barcode.getBytes(), batchId.getBytes(), batch.getBytes(), items[0].getBytes(), items[1].getBytes(),
-                scanDate.getBytes(), barcodeID.getBytes()};
+                scanDate.getBytes(), barcode_1.getBytes()};
+        Log.e("barcode", barcode_1);
         if (this.allDevicesSelected()) {
             for (DeviceData deviceData : this.connectedDevicesData.values()) {
                 IDevice device = deviceData.device;
