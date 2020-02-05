@@ -2,10 +2,11 @@
 <Job>
     <Energy>Normal</Energy>
     <Quantity>1</Quantity>
+    <UseBlackMark>1</UseBlackMark>
     <LabelSize
-        length="0.866"
-        units="Inches"
-        width="1.90000"
+        length="25"
+        units="MM"
+        width="47"
     />
     <Command>Print</Command>
 
@@ -14,13 +15,12 @@
 
         <!-- ImageSize tag is required -->
         <ImageSize
-            height="1.00000"
+            height="20"
             origin="TopLeft"
-            units="Inches"
-            width="1.800000"
-            x="0.20000"
-            y="0.000000"
-        />
+            units="MM"
+            width="44"
+            x="5.13"
+            y="0.000000"/>
         <Presentation>0</Presentation>
 
         <!-- Field count is the total number of Fields in the label -->
@@ -37,9 +37,9 @@
             <TextField id="batchId">
                 <Volatile>1</Volatile>
                 <BoundingBox
-                    height="0.09"
-                    units="Inches"
-                    width="1.80000"
+                    height="4.16"
+                    units="MM"
+                    width="45.62"
                     x="0.0"
                     y="0.0"/>
                 <Font pointsizeheight="8.000">Arial Bold</Font>
@@ -49,11 +49,11 @@
             <TextField id="batchId1">
              <Volatile>1</Volatile>
              <BoundingBox
-                 height="0.09"
-                 units="Inches"
-                 width="1.80000"
+                 height="4.16"
+                 units="MM"
+                 width="45.62"
                  x="0.0"
-                 y="0.12"/>
+                 y="3.16"/>
              <Font pointsizeheight="8.000">Arial Bold</Font>
              <Data min=”0” max=”15”/>
 
@@ -61,10 +61,10 @@
          <TextField id="BatchLast">
              <Volatile>1</Volatile>
              <BoundingBox
-                 height="0.09"
-                 units="Inches"
-                 width="1.500000"
-                 x="0.3"
+                 height="0.00"
+                 units="MM"
+                 width="38.07"
+                 x="7.80"
                  y="0.0"
              />
              <Font pointsizeheight="26.000">Arial Bold</Font>
@@ -76,11 +76,11 @@
          <TextField id="labelSequence1">
              <Volatile>1</Volatile>
              <BoundingBox
-                 height="0.09"
-                 units="Inches"
-                 width="1.500000"
-                 x="0.15"
-                 y="0.35" />
+                 height="0.00"
+                 units="MM"
+                 width="38.07"
+                 x="3.82"
+                 y="8.28" />
              <Font pointsizeheight="24.000">Arial Bold</Font>
              <HorizontalJustification>Center</HorizontalJustification>
              <Data min=”0” max=”15”/>
@@ -88,11 +88,11 @@
            <TextField id="labelSequence2">
                          <Volatile>1</Volatile>
                          <BoundingBox
-                             height="0.09"
-                             units="Inches"
-                             width="1.500000"
-                             x="0.43"
-                             y="0.4" />
+                             height="0.00"
+                             units="MM"
+                             width="38.07"
+                             x="11"
+                             y="10.05" />
 
                          <Font pointsizeheight="9.500">Arial Bold</Font>
                          <HorizontalJustification>Center</HorizontalJustification>
@@ -101,19 +101,19 @@
          <TextField id="scanTime">
                          <Volatile>1</Volatile>
                          <BoundingBox
-                             height="0.09"
-                             units="Inches"
-                             width="1.800000"
-                             y="0.65"
-                             x=0.12/>
+                             height="0.00"
+                             units="MM"
+                             width="45.62"
+                             y="16.06"
+                             x="3.16"/>
                          <Font pointsizeheight="8.000">Arial Bold</Font>
                          <HorizontalJustification>Center</HorizontalJustification>
                          <Data min=”0” max=”20”/>
                      </TextField>
              <BarcodeField id="qr">
              <Volatile>1</Volatile>
-             <Origin units="Inches" x="0.0" y="0.73" justification="Left"/>
-             <BarHeight units="Inches">0.55</BarHeight>
+             <Origin units="MM" x="0.0" y="18.62" justification="Left"/>
+             <BarHeight units="MM">13.17</BarHeight>
              <Orientation>0</Orientation>
              <Type>qr</Type>
              <Options model="2" humanreadable="0" mpclstyle="1" security="3" datamode="3" barcodemode="1" paritybyte="E9" codecount="5"/>

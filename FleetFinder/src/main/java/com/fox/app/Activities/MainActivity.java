@@ -268,10 +268,8 @@ if(getIntent().hasExtra("Scanner")){
                 application.registerResource(ResourceMediaType.Lnt, "Sample Label LNT", "SampleLabel.LNT");
             if (!Arrays.asList(listOfResources).contains("Quantity Test LNT"))
                 application.registerResource(ResourceMediaType.Lnt, "Quantity Test LNT", "QuantityTest.LNT");
-
             if (!Arrays.asList(listOfResources).contains("Barcode Print LNT"))
                 application.registerResource(ResourceMediaType.Lnt, "Barcode Print LNT", "BarcodePrint.LNT");
-
             if (!Arrays.asList(listOfResources).contains("Barcode Text Print LNT"))
                 application.registerResource(ResourceMediaType.Lnt, "Barcode Text Print LNT", "BarcodePrintTextOnly.LNT");
             if (!Arrays.asList(listOfResources).contains("Bold Italic Underline LNT"))
