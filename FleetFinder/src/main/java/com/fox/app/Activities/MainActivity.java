@@ -247,10 +247,10 @@ if(getIntent().hasExtra("Scanner")){
 
             String[] listOfResources = ResourceManager.getResourceList(ResourceMediaType.Font);
 
-            if (!Arrays.asList(listOfResources).contains("Arial"))
-                application.registerResource(ResourceMediaType.Font, "Arial", "Arial.ttf");
-            if (!Arrays.asList(listOfResources).contains("Arial Bold"))
-                application.registerResource(ResourceMediaType.Font, "Arial Bold", "arialbold.ttf");
+            if (!Arrays.asList(listOfResources).contains("RobotoRegular"))
+                application.registerResource(ResourceMediaType.Font, "RobotoRegular", "RobotoRegular.ttf");
+            if (!Arrays.asList(listOfResources).contains("RobotoBold"))
+                application.registerResource(ResourceMediaType.Font, "RobotoBold", "RobotoBold.ttf");
 
             listOfResources = ResourceManager.getResourceList(ResourceMediaType.Graphic);
             if (!Arrays.asList(listOfResources).contains("Avery Logo"))

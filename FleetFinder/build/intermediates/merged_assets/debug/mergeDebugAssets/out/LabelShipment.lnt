@@ -42,7 +42,7 @@
                     width="45.62"
                     x="0.0"
                     y="0.0"/>
-                <Font pointsizeheight="8.000">Arial Bold</Font>
+                <Font pointsizeheight="8.000">RobotoBold</Font>
                 <Data min=”0” max=”15” />
 
             </TextField>
@@ -54,7 +54,7 @@
                  width="45.62"
                  x="0.0"
                  y="3.16"/>
-             <Font pointsizeheight="8.000">Arial Bold</Font>
+             <Font pointsizeheight="8.000">RobotoBold</Font>
              <Data min=”0” max=”15”/>
 
          </TextField>
@@ -67,7 +67,7 @@
                  x="7.80"
                  y="0.0"
              />
-             <Font pointsizeheight="26.000">Arial Bold</Font>
+             <Font pointsizeheight="26.000">RobotoBold</Font>
              <HorizontalJustification>Center</HorizontalJustification>
              <Data min=”0” max=”15”/>
 
@@ -81,7 +81,7 @@
                  width="38.07"
                  x="3.82"
                  y="8.28" />
-             <Font pointsizeheight="24.000">Arial Bold</Font>
+             <Font pointsizeheight="24.000">RobotoBold</Font>
              <HorizontalJustification>Center</HorizontalJustification>
              <Data min=”0” max=”15”/>
          </TextField>
@@ -94,7 +94,7 @@
                              x="11"
                              y="10.05" />
 
-                         <Font pointsizeheight="9.500">Arial Bold</Font>
+                         <Font pointsizeheight="9.500">RobotoBold</Font>
                          <HorizontalJustification>Center</HorizontalJustification>
                          <Data min=”0” max=”15”/>
                      </TextField>
@@ -106,7 +106,7 @@
                              width="45.62"
                              y="16.06"
                              x="3.16"/>
-                         <Font pointsizeheight="8.000">Arial Bold</Font>
+                         <Font pointsizeheight="8.000">RobotoBold</Font>
                          <HorizontalJustification>Center</HorizontalJustification>
                          <Data min=”0” max=”20”/>
                      </TextField>
